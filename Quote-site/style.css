@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #045dc4, #f76560);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* #3a1c71 → #d76d77 → #ffaf7b */
+
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Paragraph{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+button{
+    width: 120px;
+    font-size: 16px;
+    height: 50px;
+    background-color: rgb(71, 83, 255);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+}
+
+button:hover{
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
+
+
+#quoteOutput{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100PX;
+}
+#authorOutput{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100PX;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
