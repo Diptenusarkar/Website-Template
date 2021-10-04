@@ -9,7 +9,7 @@
 * You _**can**_ use the templates for both personal and commercial use.
 * You _**can not**_ claim the templates. (Applicable to the use)
 
-## For Contibutors
+## For Contributors
 1. Make sure that you own the full code & design yourself.
 2. By contributing, you are going to give others the permission to use 100% of your code.
 
@@ -35,11 +35,11 @@
    ```
    git remote add upstream https://github.com/Diptenusarkar/Website-Template.git
    ```
-5. **Before making any changes in the repository, always take a pull from the upstream repository to your branch to keep it updated with remote repository.**
+5. **Before making any changes in the repository, always fetch and pull from the upstream repository to keep your branch updated with the parent repository.**
    ```
    git pull upstream main
    ```
-6. **Create a new branch**.
+6. **Create a new branch.**
    ```
    git checkout -b <your_branch_name>
    ```
@@ -48,16 +48,16 @@
 	Ex. "School Website"
 	```
 
-8. **Track your changes**
+8. **Move your changes to the git staging area.**
    ```
    git add .
    ```
-9. **Commit your changes.**
+9. **Commit your changes in staging area.**
    ```
-   git commit -m "Relevant message"
+   git commit -m "<relevant message>"
    ```
-10. **Push the commited changes in your branch to your remote repo.**
+10. **Push the committed changes in your local branch to your remote repo's branch.**
     ```
     git push -u origin <your_branch_name>
     ```
-11. **Make pull request (PR)** 🚀
+11. **Make a pull request (PR).** 🚀
