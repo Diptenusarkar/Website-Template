@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Import stylesheets
-import './index.css';
-
 // Import custom components
 import App from './App';
 import Dashboard from './Dashboard';

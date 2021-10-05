@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
+// Import MaterialUI components
+import { Container, Typography, Button } from "@material-ui/core";
 
 export default function Dashboard () {
     return (
-        <div>
-            <header>
+        <Container>
+            <Button>
                 <Link to='/'>Home</Link>
-            </header>
-            <h1>Dashboard</h1>
-        </div>
+            </Button>
+            <Typography variant='h3'>Dashboard</Typography>
+        </Container>
     )
 }
