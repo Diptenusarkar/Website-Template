@@ -61,3 +61,9 @@
     git push -u origin <your_branch_name>
     ```
 11. **Make a pull request (PR).** 🚀
+
+## Our Contributors
+
+<a href="https://github.com/Diptenusarkar/Website-Template">
+  <img src="https://contrib.rocks/image?repo=Diptenusarkar/Website-Template" />
+</a>
