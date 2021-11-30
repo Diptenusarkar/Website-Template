@@ -1,0 +1,502 @@
+@import './_color.css';
+@import './_font.css';
+@import './_utility.css';
+@import './_override.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 8000px;
+} */
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px){
+
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1152px;
+    }
+
+}
+
+/* =================  */
+/* Hedaer  */
+/* ================= */
+
+header.topbar .icons a{
+    margin-right: 0.6rem;
+}
+
+header.topbar {
+    background: var(--secondary);
+    color: var(--pure);
+    padding: 0.75rem 0;
+}
+
+header.topbar .auth > div a {
+    color: var(--pure);
+    text-decoration: none;
+}
+
+header.topbar .auth > div img {
+    margin-right: 0.36rem;
+}
+
+header.topbar .auth .divider {
+    padding: 0 1rem;
+}
+
+/* ============ */
+/* Nav bar  */
+/* ============ */
+
+.top {
+    padding: 1.5rem 0;
+}
+
+nav .top .contact h5, nav .top .time h5 {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+nav .top .contact h6, nav .top .time h6{
+    font-size: 0.89rem;
+    letter-spacing: 0.02rem;
+    color: var(--ternary);
+}
+
+nav .top .contact img, nav .top .time img {
+    margin-right: 1rem;
+}
+
+nav .navbar a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+nav .navbar a.active {
+    background: var(--primary);
+    color: var(--pure);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+nav .navbar a:hover {
+    background: var(--primary);
+    color: var(--pure);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+/* ================= */
+/* Header hero  */
+/* ================= */
+
+header.hero {
+    height: 600px;
+    background-image: url(../assets/images/hero.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header.hero .container {
+    position: relative;
+}
+
+header.hero .welcome {
+    margin-bottom: 0.25rem;
+}
+
+header.hero .welcome span {
+    color: var(--secondary);
+    margin-right: 0.75rem;
+}
+
+header.hero h1 {
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+header.hero h1 span {
+    color: var(--primary);
+}
+
+header.hero p {
+    width: 50%;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+header.hero button:first-child {
+    margin-right: 0.50rem;
+}
+
+header.hero .hero-image {
+    position: absolute;
+    top: -40px;
+    right: 40px;
+}
+
+/* ================= */
+/* Top Proudact  */
+/* ================= */
+
+section {
+    padding: 4rem 0;
+}
+
+section.top-products {
+    background: var(--light);
+}
+
+section.top-products .food-slider .food-cart {
+    background: var(--haven);
+    padding: 1.5rem 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.top-products .food-slider .food-cart .product-image img {
+    width: 80%;
+    height: 200px;
+    padding-bottom: 1rem;
+    object-fit: contain;
+}
+
+hr {
+    border: 1px solid var(--light);
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+section.top-products .food-slider .food-cart h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+section.top-products .food-slider .food-cart .stars img {
+    margin-right: 0.25rem;
+}
+
+section.top-products .food-slider .food-cart .stars {
+    margin-bottom: 0.25rem;
+}
+
+section.top-products .food-slider .food-cart .price {
+    color: var(--danger);
+    margin-bottom: 1rem;
+}
+
+section.top-products .food-slider .food-cart button {
+    color: var(--secondary);
+    background: var(--haven);
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+section.top-products .food-slider .food-cart button:hover {
+    background: var(--primary);
+    color: var(--haven);
+}
+
+.food-slider .food-cart button img {
+    background: var(--primary);
+    padding: 0.50rem;
+    height: 32px;
+    margin-right: 1.2rem;
+}
+
+.top-products .slider-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--primary);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.top-products .slider {
+    position: relative;
+}
+
+.prev-btn {
+    position: absolute;
+    top: 46%;
+    left: -3rem;
+    z-index: 1;
+}
+
+.next-btn {
+    position: absolute;
+    top: 46%;
+    right: -3rem;
+    z-index: 1;
+}
+
+.top-products .btn-wrapper {
+    margin-top: 2rem;
+}
+
+/* ============== */
+/* about section  */
+/* ============== */
+
+section.about-meal img {
+    width: 85%;
+}
+
+section.about-meal h2 {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+section.about-meal p {
+    line-height: 1.7;
+    margin-bottom: 4rem;
+}
+
+/* ========================== */
+/* section service  */
+/* ========================== */
+
+section.our-services {
+    background: var(--light);
+    z-index: 0;
+    position: relative;
+}
+
+section.our-services .service-cart {
+    background: var(--haven);
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    position: relative;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.our-services .service-cart:not(:last-child) {
+    margin-right: 2rem;
+}
+
+section.our-services .card-wrapper {
+    margin-top: 8rem;
+}
+
+section.our-services .service-cart .icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+section.our-services .service-cart h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+section.our-services .service-cart p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* =================== */
+/* section big-dela  */
+/* =================== */
+
+section.big-deal {
+    background: linear-gradient(
+        rgba(35, 43, 56, 0.9),
+        rgba(35, 43, 56, 0.9)
+    ), url(../assets/images/food-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.big-deal .timer div:not(:last-child){
+    margin-right: 2rem;
+}
+
+section.big-deal .timer div {
+    background: var(--primary);
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+section.big-deal .timer div span:first-child {
+    font-size: 2.5rem;
+    color: var(--haven);
+    margin-bottom: 0.05rem;
+}
+
+section.big-deal .timer div span:last-child {
+    color: var(--haven);
+}
+
+/* =========================== */
+/* section subscribe  */
+/* ============= */
+
+section.subscribe {
+    background: var(--primary);
+}
+
+section.subscribe .container > div:first-child img {
+    width: 90%;
+}
+
+section.subscribe .container div:first-child {
+    flex: 1;
+}
+
+section.subscribe .container div:last-child {
+    flex: 1;
+}
+
+section.subscribe h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+section.subscribe p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+section.subscribe .input-wrap {
+    background: var(--haven);
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.subscribe .input-wrap input {
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+section.subscribe .input-wrap input:focus {
+    outline: none;
+}
+
+section.subscribe .input-wrap button {
+    padding: 0.8rem 2rem;
+    border: none;
+    background: var(--primary);
+    color: var(--pure);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    outline: none;
+}
+
+section.subscribe .input-wrap button:hover {
+    background: var(--secondary);
+}

@@ -1,0 +1,11 @@
+.slick-slide {
+    margin: 0 27px;
+}
+
+.slick-list {
+    margin: 0 -27px;
+}
+
+.slick-track {
+    padding:  1rem 0;
+}
