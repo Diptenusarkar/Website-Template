@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* .header {
+    height: 100vh;
+} */
+
+.nav {
+    height: 9vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.nav .logo {
+    font-size: 2rem;
+    text-decoration: none;
+    /* color: #BA68C8; */
+    color: black;
+    font-weight: bold;
+}
+
+.nav ol {
+    list-style: none;
+}
+
+.nav ol li {
+    display: inline-block;
+    margin-left: 2vw;
+}
+
+.nav ol li .nav-link {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.hero__top {
+    height: 75vh;
+    /* background: gray; */
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__top-box h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #BA68C8;
+    margin-bottom: 1.9rem;
+}
+
+.hero__top-box p {
+    font-size: 1.8rem;
+    color: #1a011f;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.hero__top-box img {
+    height: 400px;
+}
+
+.hero__btn {
+    text-decoration: none;
+    background-color: #BA68C8;
+    color: white;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* ================================== */
+/* header end  */
+/* ================================== */
+
+/* .main {
+    padding: 0 7%;
+} */
+
+.main__whyus {
+    height: 20vh;
+    background-color: #f5ecec;
+    margin: 0 7%;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.main__whyus-box {
+    text-align: center;
+}
+
+.main__whyus-box figure img {
+    height: 85px;
+}
+
+.main__whyus-box figure figcaption {
+    font-size: 1.8rem;
+    color: #1a011f;
+    font-weight: bold;
+    margin-left: 2rem;
+}
