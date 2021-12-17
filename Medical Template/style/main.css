@@ -119,7 +119,7 @@ html {
 /* ================================== */
 
 .main__service {
-    height: 80vh;
+    /* height: 80vh; */
     padding: 0 7%;
     text-align: center;
 }
@@ -158,4 +158,79 @@ html {
 
 .main__service-box-main img {
     height: 200px;
+}
+
+/* ================================== */
+/* Service end  */
+/* ================================== */
+
+.contact {
+    /* height: 80vh; */
+    padding: 0 7%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #f5ecec; */
+}
+
+.contact__box {
+    width: 45%;
+    /* background: red; */
+}
+
+.contact__box h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact__box img {
+    height: 450px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input [type="submit"] {
+    display: block;
+}
+
+/* ================================== */
+/* Contact end  */
+/* ================================== */
+
+.footer {
+    background-color: #f1f1f1;
+}
+
+.footer__box-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+}
+
+.footer__box h1 {
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #1a011f;
+    margin-bottom: 1.9rem;
+}
+
+.footer__box ol {
+    list-style: none;
+}
+
+.footer__box ol li {
+    font-size: 1.9rem;
+}
+
+.footer p {
+    font-size: 1.9rem;
+    color: #1a011f;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2rem;
 }
