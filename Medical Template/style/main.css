@@ -113,3 +113,49 @@ html {
     font-weight: bold;
     margin-left: 2rem;
 }
+
+/* ================================== */
+/* Whyus end  */
+/* ================================== */
+
+.main__service {
+    height: 80vh;
+    padding: 0 7%;
+    text-align: center;
+}
+
+.main__service h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #BA68C8;
+    padding: 1.9rem 0;
+}
+
+.main__service-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3rem;
+}
+
+.main__service-box-main {
+    border-radius: .8rem;
+    padding: 1rem 0;
+    transition: all .2s;
+    width: 350px;
+}
+
+.main__service-box-main:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.main__service-box-main h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a011f;
+    margin-bottom: 1.9rem;
+}
+
+.main__service-box-main img {
+    height: 200px;
+}
