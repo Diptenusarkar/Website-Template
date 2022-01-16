@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+} 
+
+nav {
+    min-height: 10vh;
+    padding: 2rem 8%;
+    background: #131c27;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    z-index: 999999999999;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-family: Pattaya;
+}
+
+nav ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ol li {
+    margin-left: 1.5rem;
+}
+
+nav ol li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+/* ! nav end  */
+
+.header__hero {
+    /* background: green; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.header__hero .header__hero-box {
+    /* background-color: red; */
+    min-height: 45rem;
+    width: 48%;
+}
+
+.header__hero .header__hero-box1 {
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: rgba(0, 0, 0, 0.300);
+    border-radius: 5px; */
+}
+
+.header__hero .header__hero-box1 h2 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.header__hero .header__hero-box1 h2 strong {
+    border-bottom: 5px solid #11a152;
+    font-family: pattaya;
+}
+
+.header__hero .header__hero-box1 p {
+    background: rgba(0, 0, 0, 0.300);
+    font-size: 2rem;
+    margin: 0 4rem;
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: justify;
+
+}
+
+.header__hero .header__hero-box1 a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #ffffff;
+    background-color: royalblue;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    margin-top: 4.5rem;
+}
+
+.header__hero .header__hero-box2 img {
+    height: 400px;
+}
+
+/* ! header end  */
+
+.recent__video {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.123);
+    padding: 2rem 0;
+}
+
+/* .recent__video-textBox {
+    background: crimson;
+} */
+
+.recent__video-textBox {
+    /* text-align: center;
+    background: rgba(0, 0, 0, 0.377); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recent__video-textBox h2 {
+    font-size: 6rem;
+    font-family: Pattaya;
+    color: #000000;
+    margin-bottom: 2rem;
+    letter-spacing: 5px;
+}
+
+.recent__video-textBox p {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.recent__video-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    /* background-color: black; */
+}
+
+.recent__video-box {
+    /* background: red; */
+    width: 45%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recent__video-box video {
+    width: 95%;
+    height: 100%;
+}
+
+/* ! recent video end  */
+
+.about__me {
+    /* background: red; */
+    /* width: 48%; */
+    padding: 2rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.about__me-imgBox {
+    /* background: gray; */
+    width: 48%;
+}
+
+.about__me-imgBox figure {
+    text-align: center;
+}
+
+.about__me-imgBox figure img {
+    height: 40rem;
+}
+
+.about__me-imgBox figure figcaption {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: Pattaya;
+    color: #000000;
+    margin-top: 2rem;
+}
+
+.about__me-textBox {
+    width: 48%;
+    text-align: center;
+    /* background: black; */
+}
+
+.about__me-textBox h2 {
+    font-size: 5.4rem;
+    font-family: Pattaya;
+    color: #000000;
+    letter-spacing: 4px;
+}
+
+.about__me-textBox p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/* ! about me end */
+
+.contact {
+    background: rgba(0, 0, 0, 0.123);
+    padding: 2rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.contact-map {
+    width: 45%;
+    background: gray;
+}
+
+.contact-map iframe {
+    border-radius: 8px;
+}
+
+.contact-form {
+    width: 45%;
+    background: rgba(2, 119, 134, 0.356);
+    border-radius: 8px;
+}
+
+.contact-form form {
+    text-align: center;
+}
+
+.contact-form-box {
+    /* background: green; */
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+.contact-form-box label {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.contact-form-box input {
+    padding: 1.4rem;
+    /* border-radius: 8px; */
+    width: 80%;
+    font-size: 1.7rem;
+}
+
+.contact-form-box input:focus {
+    outline: none;
+}
+
+.contact-form-box textarea {
+    min-width: 75%;
+    max-width: 75%;
+    min-height: 13rem;
+    max-height: 13rem;
+    font-size: 1.7rem;
+    padding: 1.4rem;
+} 
+
+.contact-form-box textarea:focus {
+    outline: none;
+}
+
+.contact-form-box button[type="submit"] {
+    background: #11a152;
+    color: #ffffff;
+    padding: 1.4rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ! contact form end  */
+
+.upcoming__tour {
+    text-align: center;
+}
+
+.upcoming__tour h1 {
+    font-size: 5rem;
+    font-family: Pattaya;
+    color: #000000;
+    margin: 1.1rem 0;
+    letter-spacing: 5px;
+}
+
+.upcoming__tour-main {
+    /* background: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8%;
+}
+
+.upcoming__tour-box {
+    height: 34rem;
+    /* background: red; */
+    width: 32%;
+    /* outline: 1px solid #000000; */
+    /* margin: 1rem; */
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.upcoming__tour-box figure {
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.upcoming__tour-box figure img {
+    height: 28rem;
+}
+
+.upcoming__tour-box figure figcaption {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.upcoming__tour-box h3 {
+    font-size: 1.7rem;
+}
+
+/* ! upcoming tour end */
+
+footer {
+    padding: 2rem 8%;
+    background: rgba(0, 0, 0, 0.123);
+}
+
+footer p {
+    font-size: 1.9rem;
+    color: #000000;
+}
