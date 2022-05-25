@@ -1,0 +1,54 @@
+nav a {
+    font-size: 3rem;
+}
+
+.header__hero h1 {
+    font-size: 3rem;
+}
+
+.section__about {
+    flex-direction: column;
+}
+
+.section__significant {
+    flex-direction: column;
+    padding: 5rem 1%;
+}
+
+.section__significant-box {
+    width: 92%;
+    height: 100%;
+}
+
+.section__significant-box h2 {
+    font-size: 2.5rem;
+}
+
+.section__significant-box p {
+    font-size: 1.6rem;
+}
+
+.section__mission--box1 div {
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+
+.section__mission--box1 h2 {
+    font-size: 4rem;
+}
+
+.section__mission--box1 p {
+    font-size: 1.9rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-decoration: justify;
+}
+
+.section__mission--box2 {
+    flex-direction: column;
+}
+
+.footer .footer__linkbox {
+    display: flex;
+    flex-direction: column;
+}
