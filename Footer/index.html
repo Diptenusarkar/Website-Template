@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" async></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" async></script>
+    <title>Footer</title>
+</head>
+<body>
+    <footer class="footer-with-form">
+        <div class="left-container">
+            <div class="title">Footer with Form</div>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo cum ratione aspernatur dignissimos nisi rerum libero explicabo, minima pariatur.</div>
+        </div>
+        <form action="/post" method="POST">
+            <div class="title">Connect with Us</div>
+            <div class="horizontal-container">
+                <label for="name">Name</label>
+                <input type="text" required>
+            </div>
+            <div class="horizontal-container">
+                <label for="email">Email</label>
+                <input type="email" required>
+            </div>
+            <div class="horizontal-container">
+                <label for="message">Message</label>
+                <textarea name="message" cols="23" rows="3"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+
+    <footer class="footer-with-social">
+        <div class="title">Footer with Social</div>
+        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatem aspernatur! Nesciunt beatae voluptatem id voluptatum ut eos dolores a quasi, deleniti, quos accusantium fuga dolore quaerat tempore architecto neque?</div>
+        <div class="social">
+            <a href="/" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="/" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="/" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-google"></ion-icon>
+            </a>
+            <a href="/" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="/" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

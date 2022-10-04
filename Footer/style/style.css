@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Footer with Form */
+.footer-with-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #242424;
+    color: white;
+    padding: 40px;
+}
+
+.footer-with-form .left-container {
+    width: 33%;
+}
+
+.footer-with-form .left-container .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-with-form .left-container .description {
+    font-size: 16px;
+    color: rgb(191, 192, 193);
+}
+
+.footer-with-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 33%;
+}
+
+.footer-with-form form .title {
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+.footer-with-form form .horizontal-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-with-form form .horizontal-container input {
+    width: 250px;
+    border: none;
+    color: white;
+    padding: 0 5px;
+    background-color: #383838;
+}
+
+.footer-with-form form .horizontal-container textarea {
+    background-color: #383838;
+    color: white;
+    border: none;
+    padding: 0 5px;
+    width: 250px;
+    resize: none;
+}
+
+.footer-with-form form button {
+    background-color: #383838;
+    padding: 3px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-with-form form button:hover {
+    background-color: #323232;
+}
+
+
+/* Footer with Social */
+.footer-with-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+    background-color: #242424;
+    color: white;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.footer-with-social .title {
+    font-size: 24px;
+}
+
+.footer-with-social .description {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(191, 192, 193);
+    width: 60%;
+}
+
+.footer-with-social .social {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.footer-with-social .social * {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-with-social .social * * {
+    cursor: pointer;
+}
