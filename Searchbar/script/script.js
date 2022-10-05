@@ -1,7 +1,7 @@
 const dataContainer = document.getElementById('userContainer');
 const input = document.getElementById('input');
 
-fetch("../data/users.json")
+fetch("../Searchbar/data/users.json")
 .then(response => {
    return response.json();
 })
