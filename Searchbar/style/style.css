@@ -1,0 +1,28 @@
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    padding: 80px;
+}
+
+.label {
+    display: block;
+    font-size: 20px;
+}
+
+.input {
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+    box-sizing: margin-box;
+}
+
+.user-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+}
