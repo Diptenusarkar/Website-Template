@@ -5,10 +5,15 @@
 }
 
 body{
-    background: #b92b27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #045dc4, #f76560);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: #b92b27;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #045dc4, #f76560);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* #3a1c71 → #d76d77 → #ffaf7b */
+    background-image: url("https://source.unsplash.com/1600x900/?plain-background");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
 
     height: 100vh;
     font-family: 'poppins', sans-serif;
