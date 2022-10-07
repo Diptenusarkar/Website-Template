@@ -31,7 +31,7 @@
 9. [**HamBurgerPage**](./HamBurgerPage/): A well animated hamburger menu.
 10. [**Medical Template**](./Medical%20Template/): A complete web page designed for medical applications, with graphics and a form.
 11. [**News Template 1**](./News%20Template%201/): A complete web page designed for news/blog application, with news cards, search and categories for news.
-12. [**NextJS-Template**
+12. [**NextJS-Template**](./nextjs-template/): A template for using next.js in your project.
 13. [**Portfolio**](./portfolio/): A comprehensive web page with everything a freelance photographer/developer/artist etc. [might require- About, Experience, Pricing, Reviews and more!
 14. [**ProfileHover**](./ProfileHover/): A template for hover animation over a photo/card.
 15. [**Quote-site**](./Quote-site/): A page that gives you a random 'quote of the day'.
