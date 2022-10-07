@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Work+Sans:wght@300;400;700;900&display=swap');
+@import url('https://fonts.gstatic.com');
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #066774;
+}
