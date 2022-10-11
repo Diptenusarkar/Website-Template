@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 /* font-family: 'Saira Stencil One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
 
 @font-face {
     font-family: himaloy;
