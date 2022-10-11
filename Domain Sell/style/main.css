@@ -1,86 +1,101 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .header__box{
+    margin-bottom: 1em;
+  }
+}
+.form-sell{
+  width: 100%;
+  margin: 2em;
+}
 .header {
-    min-height: 100vh;
-    max-height: 100vh;
-    /* background-color: aqua; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 7%;
+  min-height: 100vh;
+  max-height: fit-content;
+  /* background-color: aqua; */
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
 }
 
 .header__box {
-    background-color: rgba(255, 255, 255, 0.11);
-    min-width: 48%;
-    max-width: 48%;
-    min-height: 35rem;
-    border-radius: .8rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-    backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.11);
+  min-width: 49%;
+  max-width: 100%;
+  min-height: 35rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .header__box-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .header__box-1 h2 {
-    font-size: 6rem;
-    color: white;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    cursor: pointer;
+  font-size: 6rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .header__box-1 p {
-    font-size: 2rem;
-    color: white;
-    font-weight: 400;
-    /* margin-bottom: 2rem; */
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  /* margin-bottom: 2rem; */
 }
 
 .header__box-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .header__box-2 form label {
-    display: block;
+  display: block;
 }
 
 .header__box-2 form button {
-    font-size: 2rem;
-    outline: none;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: .8rem;
-    cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
 }
 
 .header__box-2 form label:not(:last-child) {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .header__box-2 form label input {
-    font-size: 1.9rem;
-    padding: .5rem 1rem;
+  font-size: 1.9rem;
+  padding: 0.5rem 1rem;
 }
 
 .header__box-2 form label input:focus {
-    outline: none;
+  outline: none;
 }
