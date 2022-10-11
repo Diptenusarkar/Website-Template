@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10ac5f16c8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body> 
+    <div class="container">
+        <div class="image">
+            <img src="Demo1.jpg" alt="">
+        </div>
+        <form  class="form" action="post">
+         <div class="formbox">
+            <p>Welcome back</p>
+            <h1>
+                Login to your account
+            </h1>
+            <div class="inbox">
+                <span>Email</span>
+                <input type="email" id="mail" name="" placeholder="abc@xyz.com" >
+            </div>
+            <div class="inbox">
+                <span>Password</span>
+                <input type="password" id="pswd" name="" placeholder="*********" >
+            </div>
+            <div class="remember">
+                <input type ="radio" name=""> Remember me
+            </div>
+            <div class="forgot">
+                <lable><a href="#forgotpassword">Forgot Password ?</a></lable>
+            </div>
+            <div class="buttons">
+                <a href="welcome.html"><input type ="submit"  value="Login now" name="" onclick="check(event)"></a>  
+            </div>
+            <div class="err">
+                <span id="error"></span>
+            </div>
+            <div class="gbutton">
+                <button class="input"  ><i class="fa fa-brands fa-google"></i>  Or sign-in with google</button>
+            </div>
+            
+            <div class="footer">
+                <p>Don't have an account? <a href="#">Join free today</a></p>
+            </div>
+         </div>
+         
+        </form>
+        
+      </div>
+      <script src="validation.js"></script>
+</body>
+</html>
