@@ -1,55 +1,46 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* ! reset  */
 
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 999999999999;
-}
-
-.header .nav  {
-    background-color: #f5f5f5;
-    min-height: 10vh;
-    padding: 2rem 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999999999999;
 }
 
 .header .nav .nav__logo {
-    text-decoration: none;
-    font-size: 2.8rem;
-    color: black;
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: black;
 }
 
 .header .nav .nav__ul {
-    list-style: none;
+  list-style: none;
 }
 
 .header .nav .nav__ul .nav__ul--li {
-    display: inline-block;
-    margin-left: 2rem;
-    font-size: 1.8rem;
-    color: black;
-    /* background: red; */
-    padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  color: black;
+  /* background: red; */
+  padding: 0.5rem 1rem;
 }
 
 .breaking__news marquee {
-    font-size: 2.2rem;
-    color: #4606f6;
-    /* font-weight: bold; */
-    padding: 0.5rem 1rem;
-    background: rgb(47 238 180 / 36%);
+  font-size: 2.2rem;
+  color: #4606f6;
+  /* font-weight: bold; */
+  padding: 0.5rem 1rem;
+  background: rgb(47 238 180 / 36%);
 }
 
 /* ! marquee end */
@@ -57,68 +48,114 @@ html {
 /* ! header end  */
 
 .section__news {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 8%;    
-}
-
-.section__news-mian {
-    flex: 3;
-    /* background: red; */
-    /* height: 590vh; */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* overflow: hidden; */
-}
-
-.section__news-main-box {
-    min-height: 34rem;
-    max-height: 34rem;
-    /* background: royalblue; */
-    min-width: 25rem;
-    max-width: 25rem;
-    position: relative;
-    /* border: 1px solid red; */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: all .7s;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8%;
 }
 
 .section__news-main-box:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 
 .section__news-main-box-img {
-    /* background: salmon; */
-    height: 25rem;
+  /* background: salmon; */
+  height: 25rem;
 }
 
 .section__news-main-box-text {
-    text-align: center;
+  text-align: center;
 }
 
 .section__news-main-box-text h3 {
-    font-size: 1.7rem;
-    padding: .6rem;
+  font-size: 1.7rem;
+  padding: 0.6rem;
 }
 
 .section__news-main-box-text-link {
-    text-decoration: none;
-    color: black;
-    background: gray;
-    position: absolute;
-    bottom: 0;
-    display: block;
-    font-size: 2rem;
-    width: 100%;
-    padding: .5rem 0;
+  text-decoration: none;
+  color: black;
+  background: gray;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0.5rem 0;
 }
 
 /* ! section news box end  */
 
-.section__news-aside {
+.section__news-aside-search {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.section__news-aside-search input {
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  flex: 4;
+}
+
+.section__news-aside-search input:focus {
+  outline: none;
+}
+
+.section__news-aside-search button {
+  flex: 1;
+}
+
+.section__news-aside-category {
+  margin-top: 2.5rem;
+}
+
+.section__news-aside-category h3 {
+  font-size: 2.5rem;
+}
+
+.section__news-aside-category ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.section__news-aside-category ul li {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  color: black;
+  padding: 0.5rem 1rem;
+  background: white;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* ! section news end  */
+
+footer {
+  background: #f5f5f5;
+  padding: 2rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 600px) {
+  #menuToggle {
+    display: none;
+  }
+  .header .nav {
+    background-color: #f5f5f5;
+    min-height: 10vh;
+    padding: 2rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section__news-aside {
     flex: 1;
     background: rgba(0, 0, 255, 0.192);
     height: 75vh;
@@ -131,62 +168,186 @@ html {
     align-items: center;
     /* justify-content: space-between; */
     flex-direction: column;
-    border-radius: .4rem;
-}
+    border-radius: 0.4rem;
+  }
+  .section__news-main-box {
+    min-height: 34rem;
+    max-height: 34rem;
+    /* background: royalblue; */
+    min-width: 25rem;
+    max-width: 25rem;
+    position: relative;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.7s;
+    margin-bottom: 2rem;
+  }
 
-.section__news-aside-search {
-    margin-top: 1.5rem;
-    display: flex;
-}
-
-.section__news-aside-search input {
-    padding: .5rem 1rem;
-    font-size: 1.7rem;
-    flex: 4;
-}
-
-.section__news-aside-search input:focus {
-    outline: none;
-}
-
-.section__news-aside-search button {
-    flex: 1;
-}
-
-.section__news-aside-category {
-    margin-top: 2.5rem;
-}
-
-.section__news-aside-category h3 {
-    font-size: 2.5rem;
-}
-
-.section__news-aside-category ul {
-    list-style: none;
-    margin-top: 1rem;
-}
-
-.section__news-aside-category ul li {
-    display: inline-block;
-    margin-left: .5rem;
-    font-size: 1.8rem;
-    color: black;
-    padding: 0.5rem 1rem;
-    background: white;
-    margin-bottom: .5rem;
-    border-radius: .5rem;
-}
-
-/* ! section news end  */
-
-footer {
-    background: #f5f5f5;
-    padding: 2rem 8%;
+  .section__news-mian {
+    flex: 3;
+    /* background: red; */
+    /* height: 590vh; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+  }
 }
 
-footer p {
-    font-size: 1.8rem;
+@media only screen and (max-width: 600px) {
+  .section__news-mian {
+    margin-top: 10%;
+  }
+
+  .section__news-aside {
+    background: rgba(0, 0, 255, 0.192);
+    position: sticky;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.4rem;
+  }
+  .section__news-main-box {
+    min-height: 34rem;
+    max-height: 34rem;
+    position: relative;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    transition: all 0.7s;
+    margin-bottom: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+  .section__news {
+    flex-direction: column-reverse;
+  }
+  .section__news-aside {
+    position: relative;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    margin-left: 7%;
+    margin-top: 7%;
+    z-index: 1;
+width: 20%;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: tomato;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+    * Just a quick hamburger
+    */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /*
+    * But let's hide the middle one.
+    */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+    * Ohyeah and the last one should go the other direction
+    */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /*
+    * And let's slide it in from the left
+    */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
 }

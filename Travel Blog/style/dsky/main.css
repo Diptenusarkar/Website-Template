@@ -430,11 +430,10 @@ footer p {
   #menuToggle {
     display: block;
     position: relative;
-    top: 25px;
-    left: 25px;
-
+    margin-left: 7%;
+    margin-top: 7%;
     z-index: 1;
-
+width: 20%;
     -webkit-user-select: none;
     user-select: none;
   }
