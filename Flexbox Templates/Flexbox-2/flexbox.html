@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 20px;
+            display: block;
+            margin-left: 150px;
+            
+        }
+        .box1{
+            margin: 10px;
+            align-content: center;
+            height: 500px;
+            width: 300px;
+            border: 2px solid rgb(232, 227, 227);
+            box-shadow: 5px 5px 10px rgb(195, 192, 192);
+        }
+        .img1{
+            height: 200px;
+            width:100%;
+        }
+
+        .row1,.row2{
+               display: flex;
+               margin-top: 60px;
+               flex-wrap: wrap;
+               align-content:center ;
+        }
+
+        p{
+            /* padding: 10px; */
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; */
+        }
+
+        .heading{
+            font-size: 25px;
+            font-weight:bolder;
+        }
+        .content1{
+            font-weight:500;
+        }
+
+        .content1,.submit{
+            font-size: 20px;
+            word-spacing: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        }
+
+        .submit{
+            background-color: grey;
+            color: white;
+            padding: 8px;
+            margin: 10px;
+            margin-left: 50px;
+            width: 60%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit:hover{
+            background-color: maroon;
+            color: white;
+        }
+
+        #item2,#item5{
+            height: 550px;
+            margin-top: -20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row1">
+    <div class="box1">
+        <img class="img1" src="img1.jpg" alt="">
+       <p class="heading">Seamlessly Visualize Quality </p>
+       <p class="content1">Collaboratively administrate empowered markets via plug-and-play networks.</p>
+       <input class="submit" type="Submit"  value="Here's why">
+    </div>
+
+
+    <div class="box1" id="item2">
+        <img class="img1"  src="img2.jpg" alt="">
+       <p class="heading">Completely Synergize </p>
+       <p class="content1"> Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+       <input class="submit" type="Submit"  value="Here's how">
+    </div>
+
+    <div class="box1">
+        <img class="img1" src="img3.jpg" alt="">
+       <p class="heading">Dynamically Procrastinate </p>
+       <p class="content1"> Completely synergize resource taxing relationships via premier niche markets.</p>
+       <input class="submit" type="Submit"  value="Read more">
+    </div>
+</div>
+
+
+<div class="row2">
+    <div class="box1">
+        <img class="img1" src="img4.jpg" alt="">
+       <p class="heading">Best in class </p>
+       <p class="content1">Imagine jumping into that boat, and just letting it sail wherever he wind takes you...</p>
+       <input class="submit" type="Submit"  value="Just do it...">
+    </div>
+
+    <div class="box1" id="item5">
+        <img class="img1" src="img5.jpg" alt="">
+       <p class="heading">Dynamically innovate supply chains </p>
+       <p class="content1">Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+       <input class="submit" type="Submit"  value="Here's why">
+    </div>
+
+    <div class="box1">
+        <img class="img1" src="img6.jpg" alt="">
+       <p class="heading">Sanity check </p>
+       <p class="content1">Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+       <input class="submit" type="Submit"  value="Stop here">
+    </div>
+</body>
+</html>

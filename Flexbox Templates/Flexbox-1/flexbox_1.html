@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+            .parent{
+                display: block;
+                color:white;
+                align-content: flex-start;
+            }
+        .large,.small,.little{
+               width:100%;
+              display: flex;
+        }
+
+        #large1,#large2,#large3{
+            background-color:blue;
+            width: 33%;
+            height: 200px;
+            border: 5px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 6px;
+            /* align-items: flex-end; */
+        }
+
+        .row1{
+            margin-top: 30px;
+        }
+
+        .row1,.row2,.row3{
+               width:100%;
+              display: flex;
+              /* margin-top: 10px;  */
+        }
+
+        .col3{
+            background-color:coral;
+            width: 33%;
+            flex-direction: row;
+            height: 50px;
+            border: 5px;
+            padding: 5px;
+            margin: 1px;
+
+            border-radius: 6px;
+        }
+
+       .col4{
+            background-color:coral;
+            width: 25%;
+            border: 2px;
+            padding: 5px;
+            height: 30px;
+            margin: 1px;
+            border-radius: 6px;
+        }
+
+        .col5{
+            background-color:coral;
+            width: 20%;
+            border: 2px;
+            padding: 5px;
+            height: 30px;
+            margin: 1px;
+            border-radius: 6px;
+
+            /* align-items: flex-end; */
+        }
+
+
+        #small1,#small2,#small3,#small4{
+            background-color:blue;
+            width: 33%;
+            border: 2px;
+            height: 50px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+
+        #little1,#little2,#little3,#little4,#little5{
+            background-color:blue;
+            width: 33%;
+            border: 2px;
+            height: 50px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+         <div class="large">
+               <div class="largebox" id="large1">1
+                     <div class="row1">
+                        <div class="col3">1</div>
+                        <div class="col3">2</div>
+                        <div class="col3">3</div>
+                    </div>
+
+                    <div class="row2">
+                        <div class="col4">1</div>
+                        <div class="col4">2</div>
+                        <div class="col4">3</div>
+                        <div class="col4">4</div>
+                    </div>
+
+                    <div class="row3">
+                        <div class="col5">1</div>
+                        <div class="col5">2</div>
+                        <div class="col5">3</div>
+                        <div class="col5">4</div>
+                        <div class="col5">5</div>
+                    </div>
+                </div>
+                <div class="largebox" id="large2">2</div>
+                <div class="largebox" id="large3" >3</div>
+         </div>
+
+         <div class="small">
+            <div class="smallbox" id="small1">1</div>
+            <div class="smallbox" id="small2">2</div>
+            <div class="smallbox" id="small3">3</div>
+            <div class="smallbox" id="small4">4</div>
+        </div>
+
+        <div class="little">
+            <div class="littlebox" id="little1">1</div>
+            <div class="littlebox" id="little2">2</div>
+            <div class="littlebox" id="little3">3</div>
+            <div class="littlebox" id="little4">4</div>
+            <div class="littlebox" id="little5">5</div>
+        </div>
+</div>
+</body>
+</html>
