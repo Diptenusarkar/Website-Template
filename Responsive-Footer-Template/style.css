@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+section.footer {
+    padding: 100px;
+    width: 100%;
+    background: #141414;
+    padding-bottom: 50px;
+  }
+  section.footer .footer_center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  section.footer .footer_center .logo {
+    position: relative;
+    max-width: 188px;
+  }
+  section.footer .footer_center .logo img {
+    width: 180px;
+  }
+  section.footer .logo p {
+    color: #e2e2e2;
+  }
+  
+  section.footer .footer_center ul li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  section.footer .footer_center ul li a {
+    display: inline-block;
+    color: #e2e2e2;
+    font-weight: 500;
+  }
+  
+  section.footer .footer_center h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e2e2e2;
+    text-transform: uppercase;
+  }
+  .company ul li a:hover {
+    text-decoration: underline;
+  }
+  .links ul li a:hover {
+    text-decoration: underline;
+  }
+  .contact_us ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact_us a {
+    text-decoration: none;
+    color: #e2e2e2;
+    padding-bottom: 10px;
+  }
+  .contact_us a:hover {
+    text-decoration: underline;
+  }
+  .contact_us ul {
+    margin-top: 15px;
+  }
+  .contact_us ul li i {
+    max-width: 30px;
+    
+  }
+  .contact_us ul li i:hover {
+    transform: scale(1.05);
+  }
+  section.footer .copyright {
+    display: flex;
+    color: #e2e2e2;
+    padding: 2rem 2.5rem;
+    justify-content: center;
+  }
+  @media (max-width:992px){
+    section.footer {
+        padding: 20px;
+      }
+      section.footer .footer_center {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      section.footer .copyright {
+        padding: 0;
+      }
+      section.events_page_section {
+        padding: 20px;
+      }
+      section {
+  overflow-x: hidden;
+  padding: 20px 20px 120px;
+}
+  }
+  
