@@ -1,2 +1,2 @@
 # d1s
-[Demo Website](www.d1s.in)
+[Demo Website](http://www.d1s.in)
