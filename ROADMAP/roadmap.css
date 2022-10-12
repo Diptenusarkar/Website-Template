@@ -1,0 +1,19 @@
+body {
+    background-image: url("placement1.png");
+}
+
+h1 {
+    color: greenyellow;
+}
+
+h2 {
+    color: blue;
+}
+
+li {
+    color: burlywood;
+}
+
+a {
+    color: crimson;
+}
