@@ -1,5 +1,7 @@
 body {
     background-image: url("placement1.png");
+    background-repeat: no-repeat;
+    background-position: 1.5rem;
 }
 
 h1 {
