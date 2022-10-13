@@ -6,9 +6,11 @@ _Basic admin landing dashboard_
 
 ## PREVIEW
 
-![This is a alt text.](/preview/darkmode.png "dark mode image")
-
-![This is a alt text.](/preview/lightmode.png "dark mode image")
+  
+ ![Screenshot (1010)](https://github.com/ajaygitt/Website-Template/blob/ajay/admin-dashboard/Admin%20Dashboard/preview/lightmode.png?raw=true)
+ 
+   
+ ![Screenshot (1010)](https://github.com/ajaygitt/Website-Template/blob/ajay/admin-dashboard/Admin%20Dashboard/preview/darkmode.png?raw=true)
 
 
 
