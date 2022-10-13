@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>product - PIZZA DELACACIES Shop</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</hea>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="./about_files/pizza.jpg" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="product.html">Product</a>
+					</li>
+					<li class="menu">
+						<a href="about.html">About</a>
+
+					</li>
+					<li class="menu">
+						<a href="blog.html">Blog</a>
+
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Products</h1>
+				</div>
+			</div>
+			<div class="body">
+
+						<h1 style="text-align: center; margin: 25px;">Our All Time Products</h1>
+						<p style="text-align: center; margin: 50px;">More than any other food, PIZZA delights and enchants .... Pizza has soothed fretful
+							children, adults and welcomed tired travelers; adventurers have saved their last piece of
+							pizza to celebrate reaching new goals; suitors have given pizza to show the depth of their
+							devotion. Pizza has been used as a stimulant, an aphrodisiac, and [even] a form of love.</p>
+				
+
+				<div class="slideshow-container">
+
+					<style>
+						img{
+							width: 80%;
+							height: 400px;
+							object-fit: cover;
+						}
+					</style>
+
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 5</div>
+						<img src="./product_files/moz.jpg" style="width:100%">
+						<div class="text">Mozeralla Cheese Pizza - $4.00</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 5</div>
+						<img src="./product_files/mushroom.jpg" style="width:100%">
+						<div class="text">Italian-Mushroom Pizza - $5.50</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 5</div>
+						<img src="./product_files/haw.jpg" style="width:100%">
+						<div class="text">Hawaiian Pizza - $4.00</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 5</div>
+						<img src="./product_files/pep.jpg" style="width:100%">
+						<div class="text">Pepperoni Pizza - $6.50</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 5</div>
+						<img src="./product_files/kale.jpg" style="width:100%">
+						<div class="text">Kale-Basil Pizza - $8.00</div>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+	}
+</script>
+
+</html>

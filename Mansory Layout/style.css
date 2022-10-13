@@ -1,0 +1,102 @@
+/* GENERAL LAYOUT */
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f5f5;
+  margin: 3vh 5vw 5vh;
+}
+
+h1, p {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* MAIN PAGE - LAYOUT */
+h1#title {
+  font-size: 48px;
+}
+
+p#description {
+  font-size: 20px;
+  margin: 10px 10% 40px;
+}
+
+.blocks {
+  column-count: 5;
+}
+
+.block-item {
+  /* Use break-inside: avoid on the element within a multi-column layout to keep the content from breaking apart. To see the real effect of this, try to comment or remove this code.*/
+  break-inside: avoid;
+  background: #fff;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: transform .5s;
+}
+
+.block-item:hover {
+  transform: scale(1.05);
+}
+
+.contents {
+  text-align: left;
+  padding: 20px 20px 30px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1366px) {
+  .blocks {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blocks {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+      font-size: 14px;
+  }
+  h1#title {
+    font-size: 35px;
+  }
+  p#description {
+    font-size: 16px;
+    margin: 10px 15px 30px;
+    text-align: justify;
+  }
+  .blocks {
+    column-count: 2;
+  }
+  .block-item,
+  .block-item:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .blocks {
+    column-count: 1;
+  }
+}
