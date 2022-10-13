@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            height: 100%;
+            grid-column-gap: 10px;
+        }
+        .col1{
+            background-color: goldenrod;
+        }
+        .col2{
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-gap: 10px;
+        }
+        .row2{
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .row1,.mid1,.mid2{
+            background-color: goldenrod
+        }
+
+        #box{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="col1" id="box"> Nav </div>
+    <div class="col2">
+        <div class="row1" id="box">Header</div>
+        <div class="row2">
+             <div class="mid1" id="box">Article</div>
+             <div class="mid1" id="box">Ads</div>
+        </div>
+        <div class="row1" id="box">Footer</div>
+    </div>
+</div>
+</body>
+</html>
