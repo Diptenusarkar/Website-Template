@@ -1,0 +1,114 @@
+body{
+    background-color: white;
+    padding: 0px;
+    height: auto;
+    display: block;
+}
+.header{
+    background-color: rgb(111, 122, 131);
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.img{
+    width: 500px;
+    height: 490px;
+    padding-top: 5px;
+}
+.description{
+    display: block;
+    padding-right: 150px;
+    padding-left: 70px;
+    text-align: center;
+    padding-top: 0px;
+}
+.text1{
+    font-family: Tangerine;
+    font-size: 75px;
+    text-shadow: 6px 6px 6px black;
+    color: white;
+}
+.text2{
+    font-family: Tangerine;
+    font-size: 35px;
+    text-shadow: 6px 6px 6px black;
+    color: white;
+}
+.footer{
+    display: block;
+    padding: auto;
+    text-align: center;
+    background-color: rgb(111, 122, 131);
+    height: 100px;
+    color: white;
+}
+.footer p{
+    padding-top: 2px;
+}
+.body{
+    background-color: rgb(111, 122, 131);
+    position: relative;
+    place-items: center;
+    text-align: center;
+    color: white;
+    width: 90%;
+    padding :10px;
+    margin: auto;
+    font-size: small;
+    margin-top: 20px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: left;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+.quotes{
+    position: relative;
+    place-items: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding :10px;
+    padding-left: 36px;
+    margin: auto;
+    font-size: small;
+    margin-top: 20px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+}
+.box{
+background-color: rgb(111, 122, 131);
+width: 30%;
+height: 270px;
+margin-left: 2.0%;
+
+font-style: italic;
+font-size: 25px;
+}
+.bigpic{
+    background-color: rgb(111, 122, 131);
+    position: relative;
+    place-items: center;
+    text-align: center;
+    color: white;
+    width: 50%;
+    padding :10px;
+    margin: auto;
+    font-size: small;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.bigpic img {
+    width: 95%;
+     height: 300px;
+     padding-top: 10px;
+}
+.ftlink{
+    color: white;
+
+}
