@@ -35,6 +35,11 @@ nav ol {
   justify-content: space-between;
 }
 
+/* .paragraph{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+} */
+
 nav ol li {
   margin-left: 1.5rem;
 }
@@ -140,12 +145,14 @@ nav ol li a {
 }
 
 .header__hero.header__hero-box1 p {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(211, 117, 234, 0.3);
   font-size: 2rem;
   margin: 0 4rem;
   border-radius: 3px;
   padding: 1rem;
   text-align: justify;
+  width: 500px;
+  height: 120px;
 }
 
 .header__hero.header__hero-box1 a {
@@ -156,6 +163,7 @@ nav ol li a {
   padding: 2rem 4rem;
   border-radius: 10px;
   margin-top: 4.5rem;
+  
 }
 
 .header__hero.header__hero-box2 img {
@@ -274,6 +282,43 @@ nav ol li a {
   border-radius: 8px;
 }
 
+
+.contact-form form {
+  text-align: center;
+}
+
+.contact-form-box {
+  /* background: green; */
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.contact-form-box label {
+  font-size: 2rem;
+  margin-right: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+}
+
+.contact-form-box input {
+  padding: 1.4rem;
+  /* border-radius: 8px; */
+  width: 80%;
+  font-size: 1.7rem;
+}
+
+.contact-form-box input:focus {
+  outline: none;
+}
+
+.contact-form-box textarea {
+  min-width: 75%;
+  max-width: 75%;
+  min-height: 13rem;
+  max-height: 13rem;
+  font-size: 1.7rem;
+  padding: 1.4rem;
+
 .contact-form{
   background-color: rgba(2, 119, 134, 0.356);
 }
@@ -294,6 +339,7 @@ form { max-width:420px; margin:50px auto; }
   width:100%;
   box-sizing: border-box;
   outline:0;
+
 }
 
 .feedback-input:focus { border:2px solid #CC4949; }
@@ -420,15 +466,25 @@ textarea {
 
 footer {
   padding: 2rem 8%;
+
+  background: rgba(0, 0, 0, 0.123);
+  
+
   /* background: rgba(0, 0, 0, 0.123); */
   background-color: #131c27;;
+
 }
 
 footer p {
   font-size: 1.9rem;
+
+  color: #000000;
+  margin-left: 33%;
+
   /* color: #000000; */
   color: #fff;
   text-align: center;
+
 }
 
 /* mobile nav view */
