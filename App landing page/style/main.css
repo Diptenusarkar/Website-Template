@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+/* font-family: 'Saira Stencil One', cursive; */
+
+@font-face {
+    font-family: himaloy;
+    src: url(../assets/vendor/font/bangla/Unicode/himaloy.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: himaloy_italic;
+    src: url(../assets/vendor/font/bangla/Unicode/himaloy_italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*! Reste end hear  */
+
+/* body {
+    background-image: url(../assets/bg-main-body.svg);
+    z-index: 99999999;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+} */
+
+.header {
+    background-color: #111416;
+}
+
+.nav {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav video {
+    width: 100%;
+    height: 100%;
+}
+
+/* .text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'Saira Stencil One', cursive;
+    mix-blend-mode: multiply;
+
+} */
+
+nav a {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 5rem;
+    letter-spacing: 2.2px;
+    background: -webkit-linear-gradient(94.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    background: linear-gradient(94.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.header__hero h1 {
+    font-family: himaloy;
+    font-size: 7.5rem;
+    font-weight: 100;
+    text-align: center;
+    background: -webkit-linear-gradient(94.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    background: linear-gradient(94.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    text-decoration: none;
+    margin: 10rem auto 0 auto;
+    border-style: solid;
+    border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+}
+
+.btn-big {
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+    border-width: 4px;
+}
+
+.btn-big-big {
+    padding: 1.5rem 4.5rem;
+    font-size: 2rem;
+    border-width: 4px;
+}
+
+.btn-small {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    border-width: 4px;
+}
+
+.btn-white {
+    color: rgb(255, 255, 255);
+}
+
+.btn-black {
+    color: black;
+}
+
+.btn i {
+    margin-left: 1rem;
+}
+
+/*
+======================================
+        !header hero end hear 
+======================================
+*/
+
+.main {
+    background-color: whitesmoke;
+}
+
+.main .section__about {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 0 4%;
+    /* padding: auto 0; */
+}
+
+.main .section__about .section__about--box {
+    height: 55rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* padding: ; */
+}
+
+.main .section__about .section__about--box img {
+    height: 45rem;
+}
+
+.main .section__about .section__about--box p {
+    font-size: 2.3rem;
+    text-align: justify;
+}
+
+/*
+======================================
+        !Section about end hear
+======================================
+*/
+
+.section__significant {
+    background-color: #111416;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 4%;
+}
+
+.section__significant-box {
+    width: 32%;
+    height: 20rem;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+    padding: 2rem 0;
+}
+
+.section__significant-box h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    background: -webkit-linear-gradient(94.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    background: linear-gradient(94.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__significant-box p {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.815);
+    text-align: justify;
+}
+
+/*
+======================================
+    !Section significant end hear
+======================================
+*/
+
+.section__mission {
+    /* background-color: whitesmoke; */
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.section__mission--box1 {
+    /* height: 25rem; */
+    /* background: red; */
+    padding: 5rem 4%;
+    width: 100%;
+}
+
+.section__mission--box1 div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(165, 165, 165); */
+    padding: 5rem 0;
+}
+
+.section__mission--box1 h2 {
+    font-size: 5rem;
+}
+
+.section__mission--box1 p {
+    font-size: 2rem;
+    width: 60%;
+}
+
+.section__mission--box1 a {
+    margin: 0 auto;
+}
+
+.section__mission--box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.section__mission--box2 img {
+    height: 35rem;
+    /* background: gray; */
+}
+
+/*
+======================================
+    !Section mission end hear
+======================================
+*/
+
+footer {
+    background-color: #111416;
+    color: white;
+    padding: 10rem 4%;
+    text-align: center;
+}
+
+.footer #time {
+    font-size: 2rem;
+}
+
+.footer__linkbox {
+    text-align: center;
+}
+
+.footer__linkbox a {
+    padding: 1.5rem 2.5rem;
+    border-radius: .8rem;
+    transition: all .4s;
+}
+
+.footer__linkbox a:hover {
+    background-color: rgba(245, 245, 245, 0.100);
+}
+
+.btn-footer {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.btn-footer i {
+    margin-left: 1.5rem;
+}
+
+.footer p {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.footer p a {
+    color: white;
+}
+
+.footer div {
+    margin-top: 2rem;
+}
