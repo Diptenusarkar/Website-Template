@@ -197,6 +197,15 @@ input [type="submit"] {
     display: block;
 }
 
+.form-inside{
+    background-color: bisque;
+    margin-bottom: 12px;
+}
+
+.form-data{
+    font-size: 25px;
+}
+
 /* ================================== */
 /* Contact end  */
 /* ================================== */
