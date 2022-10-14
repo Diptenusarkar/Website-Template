@@ -1,7 +1,8 @@
 body {
     background-image: url("placement1.png");
     background-repeat: no-repeat;
-    background-position: 1.5rem;
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
