@@ -1,0 +1,78 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Admin Profile Edit</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+        <div class="container-fluid">
+            <div class="row">
+                <%-include('partials/sidebar.html')%>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-11 profile-content">
+                            <p class="display-4">Edit Profile</p>
+                            <form class="" method="post">
+                                <input type="text" name="user_id" value="<%=res.user_id%>" hidden>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="<%=res.name%>" name="name">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="<%=res.email%>" name="email">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Phone</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="<%=res.phone%>" name="phone">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Address</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="<%=res.address%>" name="address">
+                                    </div>
+                                </div>
+                                <hr>
+                                <span>Gender</span>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+            Male
+          </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                                    <label class="form-check-label" for="exampleRadios2">
+            Female
+          </label>
+                                </div>
+                                <hr>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Update</button>
+                                    <br>
+                                </div>
+                                <div class="">
+                                    <% for(var i=0; i< errs.length; i++){ %>
+                                        <%= errs[i].message; %>
+                                        <br>
+                                    <% } %>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<%-include('../partials/footer.html')%>

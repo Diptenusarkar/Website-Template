@@ -1,0 +1,73 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/customer.css">
+    <title>Request New Book</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+        <div class="container-fluid">
+            <div class="row">
+                <%-include('partials/sidebar.html')%>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-11 request-books">
+                            <p class="display-4">Request a New Book</p>
+                            <form class="" method="post">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Genre</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="genre">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Title</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="title">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Author</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="author">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Edition</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" name="edition">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">ISBN</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="isbn">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Request</button>
+                                    <br>
+                                </div>
+                            </form>
+                            <div class="">
+                                <% for(var i=0; i< errs.length; i++){ %>
+                                    <%= errs[i].message; %>
+                                    <br>
+                                <% } %>
+                                <% for(var i=0; i< success.length; i++){ %>
+                                    <%= success[i].message; %>
+                                    <br>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<%-include('../partials/footer.html')%>

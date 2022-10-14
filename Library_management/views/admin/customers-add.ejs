@@ -1,0 +1,84 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Add Students</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+            <div class="container-fluid">
+                <div class="row">
+                    <%-include('partials/sidebar.html')%>
+                        <div class="col-md-10 content">
+                            <div class="row">
+                                <div class="col-md-11 modify-customer">
+                                    <p class="display-4">Add New Student</p>
+                                    <form class="" method="post">
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="name" value="<%=data.name%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="email" value="<%=data.email%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Phone</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="phone" value="<%=data.phone%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="password">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Address</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="address" value="<%=data.address%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="input-group mb-3 gender">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01" name="gender">
+                                                <option selected value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">Add Student</button>
+                                            <br>
+                                        </div>
+                                    </form>
+                                    <div class="">
+                                        <% for(var i=0; i< errs.length; i++){ %>
+                                            <%= errs[i].message %>
+                                            <br>
+                                        <% } %>
+                                        <% for(var i=0; i< success.length; i++){ %>
+                                            <%= success[i].message %>
+                                            <br>
+                                        <% } %>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <%-include('../partials/footer.html')%>

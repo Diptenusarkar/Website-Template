@@ -1,0 +1,82 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Issue Book to Students</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+            <div class="container-fluid">
+                <div class="row">
+                    <%-include('partials/sidebar.html')%>
+                        <div class="col-md-10 content">
+                            <form method="post">
+                                <div class="input-group mb-5 search-bar">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Search Students</label>
+                                    </div>
+                                    <select class="custom-select dropbar" id="inputGroupSelect01" name="searchBy">
+                                        <option selected>by...</option>
+                                        <option value="name">Name</option>
+                                        <option value="phone">Phone</option>
+                                        <option value="email">Email</option>
+                                        <option value="address">Address</option>
+                                        <option value="gender">Gender</option>
+                                    </select>
+                                    <div class="form-inline">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="word">
+                                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <table class="table table-striped table-light table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Gender</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(var i=0; i< res.length; i++){ %>
+                                    <tr>
+                                        <% if(res[i].is_admin == 1){
+                                                continue;
+                                           }
+                                        %>
+                                        <th scope="row"><%=res[i].user_id%></th>
+                                        <td><a href="/admin/customers/profile/<%=res[i].user_id%>"><%=res[i].name%></a></td>
+                                        <td><%=res[i].phone%></td>
+                                        <td><%=res[i].email%></td>
+                                        <td><%=res[i].address%></td>
+                                        <td><%=res[i].gender%></td>
+                                        <td>
+                                            <form method="post">
+                                                <!-- <input type="text" name="user_id" value="<%=res[i].user_id%>" hidden> -->
+                                                <input type="text" name="name" value="<%=res[i].name%>" hidden>
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary">Issue Student</button>
+                                                    <br>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                            <div class="">
+                                <% for(var i=0; i< errs.length; i++){ %>
+                                    <%= errs[i].message; %>
+                                    <br>
+                                <% } %>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <%-include('../partials/footer.html')%>
