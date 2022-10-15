@@ -1,0 +1,84 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Edit Student</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+            <div class="container-fluid">
+                <div class="row">
+                    <%-include('partials/sidebar.html')%>
+                        <div class="col-md-10 content">
+                            <div class="row">
+                                <div class="col-md-11 modify-customer">
+                                    <p class="display-4">Edit Student</p>
+                                    <form class="" method="post">
+                                        <input type="text" name="user_id" value="<%=res.user_id%>" hidden>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="name" value="<%=res.name%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="email" value="<%=res.email%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Phone</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="phone" value="<%=res.phone%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" name="password" value="<%=res.password%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Address</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="address" value="<%=res.address%>">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="input-group mb-3 gender">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01" name="gender">
+                                                <option selected value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">Edit Student</button>
+                                            <br>
+                                        </div>
+                                    </form>
+                                    <div class="">
+                                        <% for(var i=0; i< errs.length; i++){ %>
+                                            <%= errs[i].message %>
+                                            <br>
+                                        <% } %>
+                                        <% for(var i=0; i< success.length; i++){ %>
+                                            <%= success[i].message %>
+                                            <br>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <%-include('../partials/footer.html')%>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'ubuntu', sans-serif;
+}
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.858),rgba(0, 0, 0, 0.402)),url('../images/banner.jpg');
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.signup-form {
+    background-color: rgba(151, 174, 189, 0.7);
+    min-height: 37rem;
+    min-width: 20rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+.header {
+    text-align: center;
+    color: black;
+    /* text-shadow: 2px 2px 5px white; */
+}
+
+.submit-button {
+    text-align: center;
+}
+/* .display-1{
+    background-color:red; 
+    color:white; 
+    opacity:75%;
+
+} */

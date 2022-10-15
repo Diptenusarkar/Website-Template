@@ -1,0 +1,35 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Admin Home</title>
+    </head>
+
+    <body>
+        <%-include('partials/navbar.html')%>
+        <div class="container-fluid">
+            <div class="row">
+                <%-include('partials/sidebar.html')%>
+                <div class="col-md-10 content">
+                    <p style="font-size:30px">Quick Inventory</p>
+                    <div class="alert alert-primary" role="alert">
+                        Total Books: <span style="float: right;"><%=bk%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Total Members: <span style="float: right;"><%=usr%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Total books borrowed: <span style="float: right;"><%=brwd%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Total borrowed books in last 30 days: <span style="float: right;"><%=mb%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Most borrowed book in last 30 days: <span style="float: right;"><%=mbb.title%> by <%=mbb.author%> | Total: <%=mbb.magnitude%> times</span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Most requested book: <span style="float: right;"><%=mrb.title%> by <%=mrb.author%> | Total: <%=mrb.magnitude%> times</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%-include('../partials/footer.html')%>

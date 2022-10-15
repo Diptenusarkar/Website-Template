@@ -1,0 +1,66 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Admin Profile</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+            <div class="container-fluid">
+                <div class="row">
+                    <%-include('partials/sidebar.html')%>
+                        <div class="col-md-10 content">
+                            <div class="row">
+                                <div class="col-md-6 profile-content">
+                                    <p class="display-4">Your Profile</p>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" readonly value="<%=res.name%>">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" readonly value="<%=res.email%>">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Phone</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" readonly value="<%=res.phone%>">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Address</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" readonly value="<%=res.address%>">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Gender</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" readonly value="<%=res.gender%>">
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <a href="/admin/profile/edit">Edit Profile</a> |
+                                    <a href="/admin/changepass">Change Password</a>
+
+                                </div>
+                                <div class="col-md-5 profile-content">
+                                    <img class="profile-pic" src="../../images/profile-pic.jpg" alt="">
+                                    <hr>
+                                    <a href="#">Change Profile Picture</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <%-include('../partials/footer.html')%>

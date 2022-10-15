@@ -1,0 +1,41 @@
+<%-include('partials/header.html')%>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login page</title>
+    </head>
+
+    <body>
+        <div class="container bg-image">
+            <h1 class="display-1 header">Library Management System, IIITL</h1>
+            <div class="row">
+                <div class="col-sm-8 login-box">
+                    <div class="row">
+                        <div class="col-sm-6 sign-up">
+                            <h3>Don't have an account? Sign up now, it's free!</h3>
+                            <a href="/signup"><button type="button" class="btn btn-primary">Signup</button></a>
+                        </div>
+                        <div class="col-sm-6 login-form">
+                            <h3>Already have an account? Sign in...</h3>
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" autocomplete="none">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                                </div>
+                                <button type="submit" class="btn btn-success">Login</button>
+                            </form>
+                            <div class="">
+                                <% for(var i=0; i< errs.length; i++){ %>
+                                    <%= errs[i].message; %>
+                                    <br>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<%-include('partials/footer.html')%>

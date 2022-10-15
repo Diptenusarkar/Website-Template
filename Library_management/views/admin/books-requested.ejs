@@ -1,0 +1,85 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Requested Books</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+            <div class="container-fluid">
+                <div class="row">
+                    <%-include('partials/sidebar.html')%>
+                        <div class="col-md-10 content">
+                            <form method="post">
+                                <div class="input-group mb-5 search-bar">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Search Books</label>
+                                    </div>
+                                    <select class="custom-select dropbar" id="inputGroupSelect01" name="searchBy">
+                                            <option selected>By...</option>
+                                            <option value="genre">Genre</option>
+                                            <option value="title">Title</option>
+                                            <option value="author">Author</option>
+                                            <option value="edition">Edition</option>
+                                            <option value="isbn">ISBN</option>
+                                        </select>
+                                    <div class="form-inline">
+
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="word">
+                                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <table class="table table-striped table-light table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Request ID</th>
+                                        <th scope="col">Genre</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Author</th>
+                                        <th scope="col">Edition</th>
+                                        <th scope="col">ISBN</th>
+                                        <th scope="col">Date Requested</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(var i=0; i< res.length; i++){ %>
+                                        <tr>
+                                            <th scope="row">
+                                                <%=res[i].request_id%>
+                                            </th>
+                                            <td>
+                                                <%=res[i].genre%>
+                                            </td>
+                                            <td>
+                                                <%=res[i].title%>
+                                            </td>
+                                            <td>
+                                                <%=res[i].author%>
+                                            </td>
+                                            <td>
+                                                <%=res[i].edition%>
+                                            </td>
+                                            <td>
+                                                <%=res[i].isbn%>
+                                            </td>
+                                            <td>
+                                                <%=res[i].date%>
+                                            </td>
+                                        </tr>
+                                        <% } %>
+                                        <div class="">
+                                            <% for(var i=0; i< errs.length; i++){ %>
+                                                <%= errs[i].message %>
+                                                <br>
+                                            <% } %>
+                                        </div>
+
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+
+            <%-include('../partials/footer.html')%>

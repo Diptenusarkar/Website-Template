@@ -1,0 +1,27 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/customer.css">
+    <title>Student Home</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+        <div class="container-fluid">
+            <div class="row">
+                <%-include('partials/sidebar.html')%>
+                <div class="col-md-10 content">
+                    <p class="display-2">Home</p>
+                    <div class="alert alert-primary" role="alert">
+                        Total books borrowed: <span style="float: right;"><%=tbbbc%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Books borrowed in last 7 days: <span style="float: right;"><%=tbbbc%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Books borrowed in last 30 days: <span style="float: right;"><%=tbbbc%></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%-include('../partials/footer.html')%>

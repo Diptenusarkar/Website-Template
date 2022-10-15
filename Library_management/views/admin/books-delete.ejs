@@ -1,0 +1,78 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Delete Book</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+        <div class="container-fluid">
+            <div class="row">
+                <%-include('partials/sidebar.html')%>
+                <div class="col-md-10 content">
+                    <div class="row">
+                        <div class="col-md-11 books-content">
+                            <p class="display-4">Delete Book</p>
+                            <form class="" method="post">
+                                <input type="text" name="book_id" value="<%=res.book_id%>" hidden>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Genre</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="<%=res.genre%>" name="genre" readonly>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Title</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="title" value="<%=res.title%>" readonly>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Author</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="author" value="<%=res.author%>" readonly>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Publisher</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="publisher" value="<%=res.publisher%>" readonly>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Edition</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" name="edition" value="<%=res.edition%>" readonly>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">ISBN</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="isbn" value="<%=res.isbn%>" readonly>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Pages</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" name="pages" value="<%=res.pages%>" readonly>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div>
+                                    <button type="submit" class="btn btn-danger">Delete Book</button>
+                                    <br>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<%-include('../partials/footer.html')%>

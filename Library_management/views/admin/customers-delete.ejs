@@ -1,0 +1,71 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/admin.css">
+    <title>Delete Student</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+            <div class="container-fluid">
+                <div class="row">
+                    <%-include('partials/sidebar.html')%>
+                        <div class="col-md-10 content">
+                            <div class="row">
+                                <div class="col-md-11 modify-customer">
+                                    <p class="display-4">Delete Student</p>
+                                    <form class="" method="post">
+                                        <input type="text" name="user_id" value="<%=res.user_id%>" hidden>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="name" value="<%=res.name%>" readonly>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="email" value="<%=res.email%>" readonly>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Phone</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="phone" value="<%=res.phone%>" readonly>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" name="password" value="<%=res.password%>" readonly>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Address</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="address" value="<%=res.address%>" readonly>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Gender</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="gender" value="<%=res.gender%>" readonly>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">Delete Student</button>
+                                            <br>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <%-include('../partials/footer.html')%>
