@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+video{
+    position: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+}
+.countdown-box,.countdown-progress-box,.complete-box{
+    position: absolute;
+    background-color: #fff;
+    height: 300px;
+    width: 430px;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: rgb(236, 236, 222);
+    opacity: 0.9;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+form{
+    margin: 20px 10px;
+    text-align: left;
+}
+.part1 input{
+    text-align:center;
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 7px;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+.part2 input{
+    text-align:center;
+    width: 45%;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 7px;
+    border: 1px solid black;
+    margin-left: 11px;
+    padding: 10px 15px;
+}
+label{
+    font-size: 1.1rem;
+}
+.part1,.part2{
+    margin-bottom: 20px;
+}
+form button{
+    /* border: 1px solid red; */
+    /* transform: translateX(137px); */
+    margin-top: 10px;
+    padding: 8px 170px;
+    /* padding: 8px 40px; */
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(19, 126, 19);
+}
+form button:hover{
+    background-color: rgb(13, 165, 13);
+}
+
+/* index2 */
+#heading{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+li{
+    list-style: none;
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: .9rem;
+}
+li span{
+    display: block;
+    font-size: 3rem;
+}
+ul{
+    margin-bottom: 20px;
+}
+#resetButton{
+    margin-top: 14px;
+    font-size: 1.1rem;
+    padding: 8px 150px;
+    border-radius: 10px;
+    background-color: rgb(19, 126, 19);
+    color: white;
+}
+#resetButton:hover{
+    background-color: rgb(13, 165, 13);
+}
+
+#finishedHeading{
+    font-size: 2.4rem;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    animation: 2s finishedHeadingStyle infinite;
+}
+@keyframes finishedHeadingStyle{
+    0%{
+        color: red;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: green;
+        transform: scale(1.1);
+    }
+    60%{
+        color: rgb(98, 0, 255);
+    }
+    80%{
+        color: rgb(30, 43, 224);
+    }
+    100%{
+        color: black;
+    }
+}
+.finishingTime{
+    font-size: 1.35rem;
+}
+
+.newButton{
+    margin-top: 82px;
+    padding: 8px 90px;
+    border-radius: 10px;
+    background-color: rgb(19, 126, 19);
+    color: white;
+    font-size: 1rem;
+}
+.newButton:hover{
+    background-color: rgb(13, 165, 13);
+}
+
+@media (max-width:500px){
+    
+    .countdown-box,.countdown-progress-box,.complete-box{
+        height: 340px;
+        width: 300px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+    form{
+        margin: 20px 10px;
+        text-align: left;
+    }
+    .part1 input{
+        text-align:center;
+        width: 100%;
+        height: 30px;
+        margin-top: 4px;
+    }
+    .part2 input{
+        text-align:center;
+        width: 70%;
+        display: block;
+        height: 30px;
+        border-radius: 8px;
+        margin-top: 10px;
+        border: 1px solid black;
+        margin-left: 31px;
+    }
+    label{
+        font-size: 1rem;
+    }
+    .part1,.part2{
+        margin-bottom: 20px;
+    }
+    form button,#resetButton{
+        margin-top: 10px;
+        padding: 8px 104px;
+        border-radius: 10px;
+        color: white;
+        font-size: 1rem;
+        background-color: rgb(19, 126, 19);
+    }
+    #heading{
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin: 50px 7px;
+        font-size: .7rem;
+    }
+    li span{
+        display: block;
+        font-size: 2rem;
+    }
+    ul{
+        margin-bottom: 20px;
+    }
+
+    #finishedHeading{
+        font-size: 1.4rem;
+        margin-top: 6px;
+        margin-bottom: 65px;
+        animation: 2s finishedHeadingStyle infinite;
+    }
+    .finishingTime{
+        font-size: 1.3rem;
+        margin: 5px 20px;
+    }
+    
+    .newButton{
+        margin-top: 70px;
+        padding: 8px 38px;
+        border-radius: 10px;
+        font-size: 1rem;
+        display: inline-block;
+    }
+}

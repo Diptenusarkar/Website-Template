@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <video src="./images/bg.mp4" autoplay="true" loop="true" muted></video>
+
+
+        <!-- countdown box before start -->
+        <div class="countdown-box" id="countdown-before-start">
+            <h1>Start your CountDown Here !</h1>
+
+
+            <form action="" id="countdown-form">
+                <div class="part1">
+                    <label for="title">Title :</label> <br>
+                    <input type="text" id="title-box" placeholder="Give a title of your countdown" required>
+                </div>
+                <div class="part2">
+                    <label for="date-time">Date-Time :</label>
+                    <br>
+                    <input type="date" id="date-box" required>
+                    <input type="time" id="time-box" required>
+                </div>
+                <button type="submit">Start</button>
+            </form>
+
+        </div>
+
+
+
+        <!-- After starting of countdown -->
+        <div class="countdown-progress-box" id="countdown-progress">
+            <div id="heading">Countdown Title</div>
+
+            <div class="time-remaining">
+                <ul>
+                    <li> <span id="days">0</span> Days</li>
+                    <li> <span id="hours">0</span> Hours</li>
+                    <li> <span id="mins">0</span> Minutes</li>
+                    <li> <span id="secs">0</span> Seconds</li>
+                </ul>
+            </div>
+
+            <button type="submit" id="resetButton">Reset</button>
+        </div>
+
+
+
+        <!-- After completion of countdown -->
+        <div class="complete-box" id="countdown-complete">
+            <div id="finishedHeading">Countdown Finished!</div>
+
+            <div class="finishingTime">
+                Countdown finished on <span id="finishingDate"> 10-11-2021 </span>
+                <div> at <span id="finishingTime"> 10:21 </span> </div>
+            </div>
+
+            <button class="newButton" id="newButton">Create new Countdown</button>
+
+        </div>
+
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
