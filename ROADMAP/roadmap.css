@@ -1,0 +1,22 @@
+body {
+    background-image: url("placement1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+h2 {
+    color: blue;
+}
+
+li {
+    color: burlywood;
+}
+
+a {
+    color: crimson;
+}
