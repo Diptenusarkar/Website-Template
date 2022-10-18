@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Card Hover</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    </style>
+
+    <style class="editable">
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .card {
+            display: grid;
+            grid-template-rows: max-content 200px 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="preview">
+        <div class="cards">
+            <article class="card">
+                <header>
+                    <h2>A very short heading</h2>
+                </header>
+
+            </article>
+
+            <article class="card">
+                <header>
+                    <h2>A short heading</h2>
+                </header>
+
+            </article>
+
+            <article class="card">
+                <header>
+                    <h2>A longer heading in this card</h2>
+                </header>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</html>
