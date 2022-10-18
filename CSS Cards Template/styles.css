@@ -1,0 +1,35 @@
+img {
+    max-width: 100%;
+}
+
+h2{
+  text-align: center;
+}
+
+.cards {
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.card {
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: red;
+}
+
+.card:hover{
+  background-color: blue;
+  color: white;
+ transform: translateY(20px);
+  z-index: 2;
+}
+
+
+.card h2 {
+    margin: 0;
+    padding: .5rem;
+}
+
+.card .content {
+    padding: .5rem;
+}
