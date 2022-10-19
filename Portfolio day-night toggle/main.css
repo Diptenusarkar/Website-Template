@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Gloria+Hallelujah&family=Nanum+Pen+Script&family=Roboto:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body {
+  background-image: url("mytchnobckgnd.jpg");
+  -webkit-backdrop-filter: blur(3px) saturate(10%) grayscale(50%)
+    brightness(20%);
+  backdrop-filter: blur(3px) saturate(10%) grayscale(50%) brightness(20%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #4a4a4a;
+  padding: 0.5em;
+  width: 100%;
+  z-index: 10;
+}
+
+i {
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e2e2e2;
+}
+
+.button {
+  background-color: #666666;
+  color: #9cc5a1;
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: large;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25),
+    -8px -8px 12px rgba(255, 255, 255, 0.3);
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25),
+    -8px -8px 12px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25) inset,
+    -8px -8px 12px rgba(255, 255, 255, 0.3) inset;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25) inset,
+    -8px -8px 12px rgba(255, 255, 255, 0.3) inset;
+}
+
+.text {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 3rem 1rem 3rem 1rem;
+  float: right;
+}
+
+.text .first {
+  background-color: #666666cb;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #9cc5a1;
+  font-size: 2rem;
+  padding: 1rem;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.text .second {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #8f8f8f;
+  padding-top: 1rem;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.text img {
+  width: 280px;
+  border: 3px solid #4a4a4a;
+  border-radius: 50%;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+.first-active {
+  color: #f0f0f0 !important;
+}
+
+.second-active {
+  color: #f0f0f0 !important;
+}
+
+.transform {
+  -webkit-backdrop-filter: blur(3px) saturate(10%) grayscale(50%)
+    brightness(20%);
+  backdrop-filter: blur(3px) saturate(10%) grayscale(50%) brightness(20%);
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.transform-active {
+  -webkit-backdrop-filter: blur(3px) saturate(10%) grayscale(50%)
+    brightness(200%);
+  backdrop-filter: blur(3px) saturate(10%) grayscale(50%) brightness(200%);
+  background-color: #e8e8e8;
+}
+
+@media screen and (min-width: 760px) {
+  .text {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 760px;
+  }
+}
+
+.night {
+  background-color: #4a4a4a;
+  color: #9cc5a1;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.day {
+  background-color: #e2e2e2 !important;
+  color: #232323 !important;
+}
+
+.hire,
+.specials,
+.form {
+  width: 25rem;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: 2px 5px 30px #66666652;
+  box-shadow: 2px 5px 30px #66666652;
+}
+
+.hire .hire,
+.hire p,
+.hire h2,
+.hire h3,
+.specials .hire,
+.specials p,
+.specials h2,
+.specials h3,
+.form .hire,
+.form p,
+.form h2,
+.form h3 {
+  padding: 1rem;
+}
+
+.form {
+  padding: 1em;
+}
+
+.form input[type="text"],
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.form input[type="submit"] {
+  background-color: #9cc5a1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #4e704e;
+}
+
+.form .form,
+.form h2 {
+  padding: 0 0 1em 0;
+}
+
+.rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 2em;
+  gap: 1em;
+  width: 100%;
+}
+
+.rest .link {
+  text-decoration: none;
+}
+
+.rest .techno {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logotechno:hover {
+  -webkit-filter: drop-shadow(2px 2px 5px #9cc5a1);
+  filter: drop-shadow(2px 2px 5px #9cc5a1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.check {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer {
+  display: inline-block;
+  color: #9cc5a1;
+  font-family: "Roboto", sans-serif;
+  background-color: #4a4a4a;
+  padding: 2em;
+  width: 100%;
+}
