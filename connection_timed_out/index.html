@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <img class="image1" src="img1.png">
+    </div>
+    <div class="init-text">
+        <h1>This webpage is not available</h1>
+    </div>
+    <div>
+        <p style="padding-left: 280px;">ERR_CONNECTION_TIMED_OUT</p>
+        <p style="padding-left: 280px;">The website took too long to respond</p>
+    </div>
+
+
+    <div id = "detail-info" style="display: none">
+        <p>Try:</p>
+        <li>Rechecking the connection</li>
+        <li>Checking the proxy and the firewall</li>
+    </div>
+
+    <br>
+
+    <button onclick="showBar()" style="margin-left: 280px;">Details</button>
+    
+
+    <a href="index.html"><button style="margin-left: 280px;" class="rel-but">Reload</button></a>
+    
+    <script>
+        function showBar() {
+          var a = document.getElementById("detail-info");
+          if (a.style.display === "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+        }
+        </script>
+</body>
+</html> 
+
+
+  
