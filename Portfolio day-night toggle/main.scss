@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Gloria+Hallelujah&family=Nanum+Pen+Script&family=Roboto:wght@300;400;700&display=swap");
+// font-family: 'Baloo 2', cursive;
+// font-family: 'Gloria Hallelujah', cursive;
+// font-family: 'Nanum Pen Script', cursive;
+// font-family: 'Roboto', sans-serif;
+
+$darkgrey: #666666;
+$olivegreen: #9cc5a1;
+$hovergreen: #4e704e;
+$lightgrey: #4a4a4a;
+$lightgreyfont: #8f8f8f;
+$bodynight: hsla(0, 0%, 0%, 0.803);
+$dayactive: rgb(35, 35, 35);
+$dayactive2: rgb(240, 240, 240);
+$daybody: rgb(226, 226, 226);
+$mainfont: "Roboto", sans-serif;
+$numbers: "Baloo 2", sans serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-image: url("mytchnobckgnd.jpg");
+  backdrop-filter: blur(3px) saturate(10%) grayscale(50%) brightness(20%);
+
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: $lightgrey;
+  padding: 0.5em;
+  width: 100%;
+  z-index: 10;
+}
+i {
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: $daybody;
+}
+@mixin bgColor() {
+  background-color: #666666;
+}
+
+.button {
+  @include bgColor();
+  color: $olivegreen;
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: large;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25),
+    -8px -8px 12px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25) inset,
+    -8px -8px 12px rgba(255, 255, 255, 0.3) inset;
+}
+
+.text {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 1rem 3rem 1rem;
+  float: right;
+
+  .first {
+    background-color: #666666cb;
+    border-radius: 10px;
+    font-family: $mainfont;
+    color: $olivegreen;
+    font-size: 2rem;
+    padding: 1rem;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+
+  .second {
+    font-family: $mainfont;
+    font-size: 1rem;
+    color: $lightgreyfont;
+    padding-top: 1rem;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+
+  img {
+    width: 280px;
+    border: 3px solid $lightgrey;
+    border-radius: 50%;
+    filter: grayscale(50%);
+  }
+}
+
+.first-active {
+  color: $dayactive2 !important;
+}
+
+.second-active {
+  color: $dayactive2 !important;
+}
+.transform {
+  backdrop-filter: blur(3px) saturate(10%) grayscale(50%) brightness(20%);
+  // background: var(--backgroundColor, $bodynight);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.transform-active {
+  backdrop-filter: blur(3px) saturate(10%) grayscale(50%) brightness(200%);
+  background-color: hsla(0, 0%, 91%, 1);
+}
+
+@media screen and (min-width: 760px) {
+  .text {
+    flex-wrap: nowrap;
+    width: 760px;
+  }
+}
+
+.night {
+  background-color: $lightgrey;
+  color: $olivegreen;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.day {
+  background-color: $daybody !important;
+  color: $dayactive !important;
+}
+.hire,
+.specials,
+.form {
+  width: 25rem;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  font-family: $mainfont;
+  box-shadow: 2px 5px 30px #66666652;
+  .hire,
+  p,
+  h2,
+  h3 {
+    padding: 1rem;
+  }
+}
+
+.form {
+  padding: 1em;
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: $olivegreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $hovergreen;
+  }
+  .form,
+  h2 {
+    padding: 0 0 1em 0;
+  }
+}
+
+.rest {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2em;
+  gap: 1em;
+  width: 100%;
+  .link {
+    text-decoration: none;
+  }
+  .techno {
+    margin-top: 2rem;
+    display: flex;
+  }
+}
+.logotechno:hover {
+  filter: drop-shadow(2px 2px 5px $olivegreen);
+  transition: 0.5s;
+}
+.check {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer {
+  display: inline-block;
+  color: $olivegreen;
+  font-family: $mainfont;
+  background-color: $lightgrey;
+  padding: 2em;
+  width: 100%;
+}
