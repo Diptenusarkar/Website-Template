@@ -76,6 +76,18 @@
             justify-content: center;
             align-items:center;
         }
+        ::placeholder{
+            color: rgb(126, 126, 126);
+            padding-left: 5px;
+            font-weight: 500;
+        }
+        input{
+            outline: none;
+        }
+        input:focus {
+            outline:2px solid #1c8adb;
+            border: none;
+        }
 
     </style>
 
@@ -85,8 +97,8 @@
         <img src="user.png">
         <h1>Sign Up Now</h1>
         <form>
-            <input type="email" class="input-box" placeholder="your Email">
-            <input type="password" class="input-box" placeholder="your password">
+            <input type="email" class="input-box" placeholder="Email">
+            <input type="password" class="input-box" placeholder="Password">
             <p><span><input type="checkbox"></span> I agree to the terms of services</p>
             <button type="button" class="signup-btn">Sign up</button>
             <hr>
