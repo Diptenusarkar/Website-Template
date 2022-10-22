@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Stylesheet file -->
+    <link rel="stylesheet" href="Style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Including font-awesome here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Using Bootstrap CDN here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body class="bg-dark">
+    <!-- Main container of the body -->
+    <div class="text-center dibba">
+        <!-- Heading OF the calculator -->
+        <div class="h2 text-white">Tip Calculator</div><hr>
+        <!-- Main input starts from here -->
+        <div class="p-4 m-4 text-start contain">
+            <!-- label and input and output starts from here -->
+            <label for="amount">Enter Amount : </label><br>
+            <div class="input-container">
+                <i class="fa fa-rupee icon"></i>
+                <input type="text" id="amount" class="input-field" onkeyup="calculatetip()">
+            </div>
+            <br>
+            <label for="tippercent">Enter Tip Percent(%) : </label><br>
+            <div class="input-container">
+                <input type="text" id="tippercent" class="input-field" onkeyup="calculatetip()"><br>
+                <i class="fa fa-percent icon"></i>
+            </div>
+            <!-- Using grid  -->
+            <div class="row p-3">
+                <!-- this section is for increase or decrease btn -->
+                <div class="col-sm-6 text-center p-4">
+                    <h5>No of People</h5><hr>
+                    <span style="font-size: 150%; padding: 8px;"><i class="fa fa-plus " id="btnincrease" onclick="increase()"></i></span>
+                    <span style="font-size: 150%; padding: 8px;" id="noofpeople"> 1 </span>
+                    <span style="font-size: 150%; padding: 8px;"><i class="fa fa-minus " id="btndecrease" onclick="decrease()"></i></span>
+                </div>
+                <!-- This is for show the price that is calculated in javascript function -->
+                <div class="col-sm-6 p-1 displays">
+                    <h5 class="text-center">Amount Per People</h5><br> <hr>
+                    <div class="h3 text-center" id="paisa">₹ 00.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Coded by Vaibhav Yadav -->
+    <!-- javascript file starts from here -->
+    <script src="Engine.js"></script>
+</body>
+</html>
