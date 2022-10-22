@@ -1,0 +1,7 @@
+This is Tip Calculator that calculate the Amount per person including tippercentage amount entered in the input box.
+
+First Enter the Amount You want to give to in the input field.
+Enter the tip amount (Note that you have just to give the number of tip not tip percentage in total, it will be internally calculated internally in the function)
+Finally Enter the No. of People you want to calculate per person.
+
+And there you will see amount per person in the last box with ₹ before. 
