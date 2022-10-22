@@ -1,0 +1,74 @@
+/* basic css implentation that is just for extra design and responsiveness of the calculator */
+/* COde starts form here */
+/* Coded by Vaibhav Yadav */
+body{
+    overflow: hidden;
+    font-size: 2%;
+}
+.displays{
+    box-shadow: 0 0 9px black;
+    border-radius: 5px;
+}
+.dibba{
+    margin: 3% 8% 8% 8%;
+}
+.contain{
+    border-radius: 5px;
+    box-shadow: 7px 7px 12px black;
+    background: rgb(2,0,36);
+    background: linear-gradient(210deg, rgba(2,0,36,1) 0%, rgba(21,21,107,1) 44%, rgba(43,9,121,0.9116046348314607) 100%, rgba(0,212,255,1) 100%);
+    color: wheat;
+}
+label{
+    padding-top: 2%;
+    font-weight: bold;
+    margin: 4px;
+}
+/* styling input icons placed in it */
+.input-container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.icon{
+    border-radius: 5px;
+    padding: 10px;
+    background: rgb(6, 6, 75);
+    /* color: white; */
+    min-width: 50px;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px ;
+}
+input[type=text]:focus{
+    outline: none;
+}
+/* Increase Decrease Button */
+#btnincrease{
+    border-radius: 50%;
+    background-color: rgb(14, 14, 82);
+    box-shadow: 3px 3px 9px black;
+    padding: 2%;
+    cursor: pointer;
+}
+#btnincrease:active{
+    transform: translate(3px,3px);
+}
+#btndecrease{
+    border-radius: 50%;
+    background-color: rgb(14, 14, 82);
+    box-shadow: 3px 3px 9px black;
+    padding: 2%;
+    cursor: pointer;
+}
+#btndecrease:active{
+    transform: translate(3px,3px);
+}
+/* innercontainer elements */
+.innercontainer{
+    display: flex;
+}
