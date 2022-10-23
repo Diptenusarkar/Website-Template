@@ -76,6 +76,7 @@
             justify-content: center;
             align-items:center;
         }
+
         ::placeholder{
             color: rgb(126, 126, 126);
             padding-left: 5px;
@@ -90,6 +91,23 @@
         }
 
 
+
+        @media (min-width: 340px) and (max-width: 480px) {
+            .sign-up-form{
+                width: 230px;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+           .tc{
+                font-size: 0.9rem;
+            }
+           
+        }
+
+
+        
+
     </style>
 
 </head>
@@ -97,11 +115,12 @@
     <div class="sign-up-form">
         <img src="user.png">
         <h1>Sign Up Now</h1>
-        <form>
-            <input type="email" class="input-box" placeholder="Email">
-            <input type="password" class="input-box" placeholder="Password">
 
-            <p><span><input type="checkbox"></span> I agree to the terms of services</p>
+        <form class="form">
+            <input type="email" class="input-box" placeholder="your Email">
+            <input type="password" class="input-box" placeholder="your password">
+            <p class="tc"><span><input type="checkbox"></span> I agree to the terms of services</p>
+
             <button type="button" class="signup-btn">Sign up</button>
             <hr>
             <p class="or">OR</p>
