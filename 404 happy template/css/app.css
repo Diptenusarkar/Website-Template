@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700,800");
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #fcc53f;
+  font-family: "Dosis", sans-serif;
+  height: calc(100%);
+  overflow: auto;
+  position: relative;
+  text-align: center;
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.cont {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+}
+h1 {
+  color: rgb(91, 21, 85);
+  font-size: 8rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  background-color: white;
+  margin: 0 auto;
+  width: max-content;
+  padding: 0em 0.4em;
+  border-radius: 5em;
+  margin-top: -0.3em;
+}
+
+h3 {
+  color: rgb(96, 51, 150);
+  font-size: 60px;
+  opacity: 100%;
+}
+p {
+  color: rgb(84 48 80);
+  font-size: 24px;
+  margin-top: 0rem;
+  background-color: hsl(25, 100%, 89%);
+  padding: 0.2em 0.6em;
+  width: max-content;
+  margin: 1em auto;
+  border-radius: 6em;
+}
+
+a {
+  text-decoration: none;
+}
+.button {
+  background-color: hsl(25, 100%, 89%);
+  color: rgb(35, 22, 34);
+  padding: 0.3em 1em;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  width: max-content;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.button:hover {
+  color: rgb(35, 35, 35);
+  border-color: #fff;
+
+  cursor: pointer;
+  opacity: 1;
+}
