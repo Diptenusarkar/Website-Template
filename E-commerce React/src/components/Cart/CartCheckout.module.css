@@ -1,0 +1,26 @@
+.pay {
+  margin-top: 100px;
+  width: 400px;
+}
+
+.checkout {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 80px 10px 80px;
+  text-decoration: none;
+}
+
+.subtotal,
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkout:hover {
+  background-color: white;
+  color: #4361ee;
+  border: 2px solid #4361ee;
+}
