@@ -1,0 +1,19 @@
+.button {
+  font-size: 20px;
+  padding: 5px 80px;
+  background-color: #40916c;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #e0fbfc;
+  color: #40916c;
+}
+
+.cartButton {
+  margin: auto 5px;
+}

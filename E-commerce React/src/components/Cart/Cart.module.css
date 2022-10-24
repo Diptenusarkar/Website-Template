@@ -1,0 +1,18 @@
+.thead {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.head_row {
+  padding: 50px 15px 50px 15px !important;
+}
+
+.empty {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.empty_icon {
+  font-size: 40px;
+  margin-right: 20px;
+}

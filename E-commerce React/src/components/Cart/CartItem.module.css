@@ -1,0 +1,23 @@
+.image {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid #e9ecef !important;
+  border-radius: 40px;
+}
+
+.button {
+  border: none;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: #e9ecef;
+  transition: 0.3s;
+}
