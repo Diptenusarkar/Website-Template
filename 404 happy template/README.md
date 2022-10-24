@@ -1,5 +1,5 @@
-## 404 flower template
+## 404 happy template
 
-![404 skull template](images/flower.png)
+![404 happy template](images/happy.png)
 
-a peaceful and cute flower 404 page template made with tsparticles and a lot of beautiful flowers
+a happy and cute 404 page template made with tsparticles and a lot of smileys
