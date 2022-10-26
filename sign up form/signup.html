@@ -29,10 +29,7 @@
         .input-box{
             border-radius: 20px;
             padding: 10px;
-
             margin: 10px 0;
-            margin-bottom: 10px;
-
             width: 100%;
             border:1px solid #999;
             outline: none;
@@ -88,6 +85,22 @@
             justify-content: center;
             align-items:center;
         }
+
+        ::placeholder{
+            color: rgb(126, 126, 126);
+            padding-left: 5px;
+            font-weight: 500;
+        }
+        input{
+            outline: none;
+        }
+        input:focus {
+            outline:2px solid #1c8adb;
+            border: none;
+        }
+
+
+
         @media (min-width: 340px) and (max-width: 480px) {
             .sign-up-form{
                 width: 230px;
@@ -101,6 +114,7 @@
            
         }
 
+
     </style>
 
 </head>
@@ -108,10 +122,12 @@
     <div class="sign-up-form">
         <img src="user.png">
         <h1>Sign Up Now</h1>
+
         <form class="form">
             <input type="email" class="input-box" placeholder="your Email">
             <input type="password" class="input-box" placeholder="your password">
             <p class="tc"><span><input type="checkbox"></span> I agree to the terms of services</p>
+
             <button type="button" class="signup-btn">Sign up</button>
             <hr>
             <p class="or">OR</p>
