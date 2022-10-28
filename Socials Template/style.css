@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.contact-us {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    margin:3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+svg{
+    height: 90px;
+fill: white;
+transition: fill 0.5s;
+}
+
+a:hover{
+    
+    transform: rotate(360deg); /* Rotate the element on hover */
+}
+
+a:hover svg{
+    fill: var(--bg-color);/* change color of the element on hover */
+}

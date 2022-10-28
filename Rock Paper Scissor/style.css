@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(80, 175, 212);
+}
+.page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(6, 41, 81);
+}
+.container{
+    border: 1px solid rgb(56, 53, 53);
+    border-radius: 12px;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    flex-direction: column;
+}
+.game-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-chosen, .computer-chosen{
+    border: 2px solid rgb(95, 88, 88);
+    border-radius: 12px;
+    width: 200px;
+    height: 280px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.player-chosen img, .computer-chosen img{
+    height: 150px;
+    /* width: 200px; */
+}
+.choose-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.choose-box .options{
+    height: 140px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.options img{
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.options img:active{
+    transform: scale(.96);
+}
+.text-head{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.result{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(6, 129, 23);
+}

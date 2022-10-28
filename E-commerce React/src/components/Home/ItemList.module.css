@@ -1,0 +1,34 @@
+.image {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+tbody {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.in_stock {
+  color: #57cc99;
+  font-weight: bold;
+}
+.out_of_stock {
+  color: #d62828;
+  font-weight: bold;
+}
+
+.add_to_cart {
+  display: inline-block;
+}
+
+.cartIcon {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 15px;
+  background-color: #c7f9cc;
+  border: none;
+}
+.cartIcon:hover {
+  background-color: #76c893;
+}
