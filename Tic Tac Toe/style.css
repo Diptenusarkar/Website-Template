@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Gentium+Plus:ital,wght@1,700&family=Macondo&family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.heading {
+    font-family: 'Gentium Plus', serif;
+    font-size: 4rem;
+    line-height: 8rem;
+    color: cornsilk;
+    margin-left: 238px;
+}
+
+body {
+    background-image: url(bgImg.jpg);
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 5px 10px 5px;
+    color: cornsilk;
+    font-family: 'Gentium Plus', serif;
+}
+
+.grid {
+    background-color: rgb(39, 24, 66);
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+}
+
+.box {
+    border: 2px solid rgb(204, 205, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: cornsilk;
+    cursor: pointer;
+}
+
+.boxText {
+    font-size: 32px;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.info span {
+    font-size: 28px;
+}
+
+.imgBox img {
+    width: 0;
+    transition: width 2s ease-in;
+}
+
+.reset {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 82px;
+    border-radius: 10px;
+    background-color: red;
+}
