@@ -3,7 +3,11 @@
 
 ------------
 
+_Read in other languages:_
 
+<kbd>[<img title="Brazilian Portuguese" alt="Portuguese Brazilian" src="https://flagcdn.com/w20/br.png" width="22">](./translations/README.pt-br.md)</kbd>
+<kbd>[<img title="English" alt="English" src="https://flagcdn.com/w20/us.png" width="22">](./README.md)</kbd>
+<kbd>[<img title="Spanish" alt="Spanish" src="https://flagcdn.com/w20/es.png" width="22">](./translations/README.es.md)</kbd>
 
 ## Permissions
 * You _**can**_ use the templates for both personal and commercial use.
@@ -35,7 +39,7 @@
 13. [**Portfolio**](./portfolio/): A comprehensive web page with everything a freelance photographer/developer/artist etc. [might require- About, Experience, Pricing, Reviews and more!
 14. [**ProfileHover**](./ProfileHover/): A template for hover animation over a photo/card.
 15. [**Quote-site**](./Quote-site/): A page that gives you a random 'quote of the day'.
-16. [**React-template**
+16. [**React-template**]
 17. [**Restaurant Template**](./Restaurant%20Template/): A template for a restaurant/food-delivery company's website.
 18. [**Searchbar**](./Searchbar/): A working search bar. [The page has a lot of names and with the search bar, you can find any name from the data.
 19. [**StickyNavbar**](./StickyNavbar/): An animated sticky navbar.
@@ -55,7 +59,6 @@
    ```
    git clone https://github.com/<your_user_name>/Website-Template.git
    ```
-
 3. **Navigate to project directory.**
    ```
    cd Website-Template
