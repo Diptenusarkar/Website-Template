@@ -5,9 +5,9 @@
 
 _Leia em outros idiomas:_
 
-<kbd>[<img title="Brazilian Portuguese" alt="Portuguese Brazilian" src="https://flagcdn.com/w20/br.png" width="22">](./translations/README.pt-br.md)</kbd>
-<kbd>[<img title="English" alt="English" src="https://flagcdn.com/w20/us.png" width="22">](../README.md)</kbd>
-<kbd>[<img title="Spanish" alt="Spanish" src="https://flagcdn.com/w20/es.png" width="22">](../translations/README.es.md)</kbd>
+<kbd>[<img title="Português Brasileiro" alt="Português Brasileiro" src="https://flagcdn.com/w20/br.png" width="22">](./translations/README.pt-br.md)</kbd>
+<kbd>[<img title="Inglês" alt="Inglês" src="https://flagcdn.com/w20/us.png" width="22">](../README.md)</kbd>
+<kbd>[<img title="Espanhol" alt="Espanhol" src="https://flagcdn.com/w20/es.png" width="22">](../translations/README.es.md)</kbd>
 
 ## Permissões
 * Você _**pode**_ usar os modelos para uso pessoal e comercial.

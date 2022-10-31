@@ -5,9 +5,9 @@
 
 _Leer en otros idiomas:_
 
-<kbd>[<img title="Brazilian Portuguese" alt="Portuguese Brazilian" src="https://flagcdn.com/w20/br.png" width="22">](./translations/README.pt-br.md)</kbd>
-<kbd>[<img title="English" alt="English" src="https://flagcdn.com/w20/us.png" width="22">](../README.md)</kbd>
-<kbd>[<img title="Spanish" alt="Spanish" src="https://flagcdn.com/w20/es.png" width="22">](../translations/README.es.md)</kbd>
+<kbd>[<img title="Portugues Brasileño" alt="Portugues Brasileño" src="https://flagcdn.com/w20/br.png" width="22">](./translations/README.pt-br.md)</kbd>
+<kbd>[<img title="Inglés" alt="Inglés" src="https://flagcdn.com/w20/us.png" width="22">](../README.md)</kbd>
+<kbd>[<img title="Español" alt="Español" src="https://flagcdn.com/w20/es.png" width="22">](../translations/README.es.md)</kbd>
 
 ## Permisos
 * Puedes _**puedes**_ usar las plantillas tanto para uso personal como comercial.
@@ -59,7 +59,6 @@ _Leer en otros idiomas:_
    ```
    git clone https://github.com/<su_nombre_de_usuario>/Website-Template.git
    ```
-
 3. **Navegar al directorio del proyecto.**
    ```
    cd website-template
@@ -70,7 +69,7 @@ _Leer en otros idiomas:_
    ```
 5. **Antes de realizar cualquier cambio en el repositorio, busque y extraiga siempre del repositorio ascendente para mantener su branch actualizada con el repositorio principal.**
    ```
-   git pull upstream principal
+   git pull upstream main
    ```
 6. **Crear una nueva branch.**
    ```
