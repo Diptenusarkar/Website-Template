@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1" height="1" viewBox="0 0 1 1">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-veg);
+      }
+
+      .cls-2 {
+        fill: #058801;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-veg">
+      <rect width="1" height="1"/>
+    </clipPath>
+  </defs>
+  <g id="veg" class="cls-1">
+    <rect class="cls-3" width="1" height="1"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="0.5" cy="0.5" r="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="12; url=../index.html">
+    <title>Sorry !</title>
+    <link rel="stylesheet" href="stylsheet/error.css">
+    <style>
+        .col-red {
+            color: red;
+            font-size: 60px;
+        }
+        .col-gree {
+            color: rgb(255, 230, 4);
+        }
+    </style>
+</head>
+<body>
+  <div class="diptenu">
+      <h1>আপনাকে স্বাগতম</h1>
+      <p>অনুগ্রহ করে অপেক্ষা করুন,<br> আমরা আমাদের ওয়েবসাইটটি এখনো সম্পূর্ণ করতে পারিনি ! <br>
+      আপনার অসুবিধার জন্য আমরা আন্তরিকভাবে দুঃখিত.<br>
+      <span class="col-gree"><u><b>এই পৃষ্ঠাটি 10 সেকেন্ড পর তার কোন অবস্থায় ফেরত চলে যাবে</b></u></span></p>
+      <h1 class="col-red" id="count">10</h1>
+      <img src="https://source.unsplash.com/350x350/?burger" class="diptenu-img" alt="Food Image">
+  </div>
+  <script type="text/javascript">
+		var counter = 10;
+
+		setInterval( function(){
+			counter--;
+
+			if( counter >= 0 ){
+				id = document.getElementById("count");
+				id.innerHTML = counter;
+			}
+
+			if( counter === 0 ){
+				id.innerHTML = "ফেরত যাবার প্রক্রিয়া শুরু হয়েছে.....";
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
