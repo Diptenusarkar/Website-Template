@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive NavBar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-blue-500">
+    <nav class="flex md:flex-row items-center fixed w-full h-[4rem] p-5 shadow md:justify-between bg-white">
+      <div>
+        <h1 class="font-[montserrat] text-[#ff7575] font-bold text-2xl cursor-pointer">
+          NavBar
+        </h1>
+      </div>
+      <div class="flex max-md:flex-col gap-10 z-[-1] md:z-auto md:static absolute max-md:w-full max-md:px-4 bg-white left-0">
+        <a href="#" class="font-[poppins] hover:text-red-500 max-md:mt-[20rem]">Home</a>
+        <a href="#" class="font-[poppins] hover:text-red-500">Products</a>
+        <a href="#" class="font-[poppins] hover:text-red-500">Reviews</a>
+        <a href="#" class="font-[poppins] hover:text-red-500 max-md:mb-[2rem]">About Us</a>
+      </div>
+      <button class="md:hidden">
+            <img src="./assets/menu.svg" alt="hamburger-icon" width="25" height="25">
+      </button>
+    </nav>
+  </body>
+</html>
