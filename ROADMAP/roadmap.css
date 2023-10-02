@@ -1,22 +1,49 @@
 body {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
     background-image: url("placement1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-h1 {
-    color: greenyellow;
+h1, h2, h3 {
+    margin-bottom: 20px;
 }
 
-h2 {
-    color: blue;
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
 }
 
 li {
     color: burlywood;
+    margin-bottom: 10px;
 }
 
 a {
-    color: crimson;
+    text-decoration: none;
+}
+
+.lang a:hover, .core-subs a:hover {
+    color: aquamarine;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.aptitude ul, li {
+    list-style: none;
 }
