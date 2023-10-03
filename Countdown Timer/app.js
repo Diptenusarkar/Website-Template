@@ -128,6 +128,14 @@ function completeCountdown() {
     finishingDate.textContent = dd + "-" + mm + "-" + yyyy;
     finishingTime.textContent = countdownTime;
     localStorage.removeItem("countdown");
+
+    var countdownCompleteSound = document.getElementById("countdownCompleteSound");
+    countdownCompleteSound.play();
+
+    newButton.addEventListener("click", function() {
+        countdownCompleteSound.pause();
+        countdownCompleteSound.currentTime = 0;
+    })
 }
 
 newButton.addEventListener("click", function () {
