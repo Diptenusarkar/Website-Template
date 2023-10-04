@@ -27,16 +27,12 @@ Move to the project directory:-
 ```bash
   cd QR_CODE_GENERATOR
 ```
-### 4.Initializing npm package installer
-```bash
-  npm init
-```
-### 5.Install Dependencies
+### 4.Install Dependencies
 Install the required dependencies:-
 ```bash
   npm install
 ```
-### 6.Command-Line Usage
+### 5.Command-Line Usage
 Generate a QR code from the command line by running:
 ```bash
   node .\index.js
