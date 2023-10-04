@@ -1,0 +1,44 @@
+body {
+    background-color: #2d3040;
+}
+#comic-book-title {
+    text-align: center;
+    color: white;
+    margin: 2rem;
+}
+#comic-page {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+#loadAllBtn {
+    background-color: #535c66;
+    color: white;
+}
+#selectVolume {
+  color: white;
+}
+#prevBtn {
+    background-color: #535c66;
+    color: white;
+}
+#currentPageNo {
+    background-color: #91a0b3;
+    color: black;
+}
+#nextBtn {
+    background-color: #535c66;
+    color: white;
+}
+#zoomInBtn {
+    background-color: #535c66;
+    color: white;
+}
+#currentZoomNo {
+    background-color: #91a0b3;
+    color: black;
+}
+#zoomOutBtn {
+    background-color: #535c66;
+    color: white;
+}
