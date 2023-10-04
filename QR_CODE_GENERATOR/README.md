@@ -5,7 +5,7 @@
 A simple QR code generator built using Node.js that allows users to create QR codes for their URL.
 
 ## Features
-Generate QR codes from text, URLs.
+Generate QR codes from URLs.
 
 Save QR codes as image files (PNG, JPEG, etc.).
 
@@ -15,21 +15,31 @@ Easily integrate into your Node.js applications.
 
 To deploy this project run
 
-1.Clone this repository to your local machine:-
+### 1.Clone the Repository
+Clone this repository to your local machine:-
+```bash
+  git Clone https://github.com/Diptenusarkar/Website-Template.git
+```
+### 2.Open the folder with VS-CODE 
 
+### 3.Navigate to the Project Directory
+Move to the project directory:-
 ```bash
-  git Clone
+  cd QR_CODE_GENERATOR
 ```
-2.Navigate to the project directory:-
+### 4.Initializing npm package installer
 ```bash
-  cd qr-code-generator
+  npm init
 ```
-3.Install the required dependencies:-
+### 5.Install Dependencies
+Install the required dependencies:-
 ```bash
   npm install
 ```
-## Command-Line Usage
+### 6.Command-Line Usage
 Generate a QR code from the command line by running:
 ```bash
-  node qr-code-generator.js [options] <data>
+  node .\index.js
 ```
+Once you entered the command line usage it will ask for your URL :-
+![examples](https://github.com/GitPratyush/Website-Template/assets/122526404/0f9fc116-e1dc-4601-9205-3e7df1244947)
