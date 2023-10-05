@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -28,9 +29,14 @@
   ul{
       list-style: none;
   }
+
   a{
       text-decoration: none;
       color:#262626 ;
+  }
+
+  #searchInput {
+    display: none;
   }
   
   /* NAV  */
