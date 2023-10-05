@@ -1,0 +1,11 @@
+body {
+  background-image: url("./assets/bg.svg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+ul.ant-pagination.ant-table-pagination.ant-table-pagination-right.css-dev-only-do-not-override-w8mnev {
+  margin: 0 !important;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+}

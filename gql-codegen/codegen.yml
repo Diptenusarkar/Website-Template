@@ -1,0 +1,14 @@
+overwrite: true
+# schema is the user endpoint that have query and mutation
+schema: "http://localhost:4000/api"
+# documents: "./src/gql/query/*.graphql"
+generates:
+  "./src/gql/generate/generated.ts":
+    plugins:
+      - typescript
+      - "@graphql-codegen/typescript-react-apollo"
+      - "@graphql-codegen/typescript-operations"
+    config:
+      withHooks: true
+      withHOC: false
+      withComponent: false
