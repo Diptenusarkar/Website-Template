@@ -1,0 +1,10 @@
+query doctorsData($Id: Int) {
+  doctorsData(Id: $Id) {
+    id
+    name
+    address
+    patientDetail {
+      status
+    }
+  }
+}
