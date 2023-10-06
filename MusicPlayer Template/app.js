@@ -1,6 +1,6 @@
 // Select all the elements in the HTML page
 // and assign them to a variable
-
+// this is the java scripts files 
 
 let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
