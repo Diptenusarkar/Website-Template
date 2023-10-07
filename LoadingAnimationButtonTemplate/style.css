@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  margin-top: 150px;
+  padding: 0;
+  background: black;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-1 {
+  height: 50px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-1 span {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.fa-circle-notch {
+  display: none;
+  font-size: 22px;
+  animation: animate 1s ease-out infinite;
+}
+
+.fa-solid {
+  display: none;
+}
+
+.fa-circle-check {
+  font-size: 20px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Btn - 2 css styles  */
+
+.btn-2-c {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: 0px solid #150485;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 210px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.btn-2-c:not(.btn-2-loading-animations):hover {
+  box-shadow: 0px 2px 15px 0px #2575fc;
+}
+
+.btn-2-c:not(.btn-2-loading-animations):hover i {
+  transform: translate(7px);
+}
+.btn-2-c i {
+  font-size: 1.45rem;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  pointer-events: none;
+  background: inherit;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.btn-2-text {
+  width: 130px;
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  left: 60px;
+  transition: all 0.3s ease;
+}
+
+.btn-2-loading-animations {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 1;
+  transition: all o.2 ease;
+}
+
+.btn-2-loading-animations::after {
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-left: 3px solid white;
+  animation: loading infinite 0.8s ease 0.3s;
+  position: absolute;
+}
+
+.btn-2-loading-animations::before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-left: 3px solid white;
+  animation: loading infinite 0.8s linear 0.2s;
+  position: absolute;
+  opacity: 0.6;
+}
+
+.btn-2-c .btn-2-loading {
+  width: 60px;
+}
+
+.btn-2-c .btn-2-loading i {
+  transform: rotate(-90deg);
+  padding-left: 3px;
+  padding-bottom: 4px;
+}
+
+.btn-2-c.btn-2-loading .btn-2-text {
+  transform: translateX(-160px);
+  width: 60px;
+}
+.btn-2-c.btn-2-loading {
+    width: 60px;
+}
+
+.btn-2-c.btn-2-loading .btn-2-loading-animations {
+  opacity: 1;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*  Button three animations */
+
+.btn-3 {
+  margin-top: 20px;
+  cursor: pointer;
+  border: 2px solid #8883a5;
+  color:black;
+  font-weight: 600;
+  height: 40px;
+  width: auto;
+  user-select: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  user-select: none;
+  outline: none;
+  transition: all ease-in 0.4s;
+}
+.btn-3:hover {
+  background: #8883a5;
+  color: white;
+}
+
+.btn-3-loading {
+  background-color: transparent;
+  border: 4px solid #aba8af;
+  border-top-color: #4c2f80;
+  user-select: none;
+  font-size: 0;
+  outline: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  animation: rotate 0.8s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Button 4th  */
+
+
+.loading-button{
+    margin-top: 40px;
+    font-size:24px;
+    border:none;
+    background: skyblue;
+    border-radius:20px;
+    color:black;
+    height:60px;
+    width:120px;
+    cursor:pointer;
+    transition:0.2s;
+    position:relative;
+    overflow:hidden;
+  }
+  .loading-button:hover span{
+    transform: translateY(-3px);
+  }
+  .loading-button:focus{
+    outline:none;
+  }
+  
+  .loading-button span{
+    position:absolute;  
+    right:32px;
+    top:16px;
+    transition:0.3s;
+      transition-delay:0.1s;
+  
+  }
+  
+  .loading-button.loading span{
+      top:-50px;
+      right:0;
+      display:none;
+  }
+  
+  .loading-button.success span{
+    top:-50px;
+  }
+  
+  .loading-button.success{
+    pointer-events:none;
+  }
+  
+  .loading-button.loading{
+    width:60px;
+    border-radius:50%;
+    animation: bounce 1s infinite;
+    pointer-events:none;
+  }
+  
+  
+  .loading-button:after{
+    position:absolute;
+    content:"✔";
+    color: transparent;  
+    text-shadow: 0 0 0 white;
+    display:block;
+    top:60px;
+    left:50px;
+    transition:0.3s;
+    transition-delay:0.1s;
+  }
+  
+  .loading-button.success:after{
+    top:12px;
+    left:50px;
+  }
+  
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+      height:60px;
+    }
+      40% {
+      transform: translateY(-30px);
+      height:68px;
+    }
+      60% {
+      transform: translateY(-15px);
+          height:68px;
+  
+    }
+  }
+  
+/*  Button 5  */
+
+
+  .button-5{
+    margin-top: 50px;
+    width: 200px;
+    height: 56px;
+    background: skyblue;
+    font-size: 32px;
+    border: none;
+    border-radius: 12px;
+    font-family: "Shadows Into Light", cursive;
+    cursor: pointer;
+    color: var(--accent);
+    font-weight: bold;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    box-sizing: border-box;
+    border-top: 4px solid red;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-radius: 100%;
+    animation: spin 0.6s ease-out infinite;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
