@@ -1,5 +1,6 @@
 # Modelo de site
-### Um repositório de modelos de site _gratuito para todos_.
+
+### Um repositório de modelos de site _gratuito para todos_
 
 ------------
 
@@ -10,17 +11,16 @@ _Leia em outros idiomas:_
 <kbd>[<img title="Espanhol" alt="Espanhol" src="https://flagcdn.com/w20/es.png" width="22">](../translations/README.es.md)</kbd>
 
 ## Permissões
+
 * Você _**pode**_ usar os modelos para uso pessoal e comercial.
 * Você _**não pode**_ reivindicar os modelos. (Aplicável ao uso)
 
 ## Para Contribuidores
+
 1. Certifique-se de possuir o código completo e o design.
 2. Ao contribuir, você dará a outras pessoas a permissão para usar 100% do seu código.
 
-
 ------------
-
-
 
 ## Índice
 
@@ -47,50 +47,66 @@ _Leia em outros idiomas:_
 21. [**Blog de viagens**](../Travel%20Blog/): Este é um modelo simples de site de blog de viagens. [Também pode ser usado por uma empresa de viagens.
 22. [**Site em construção**](../Website%20Under%20construction/): Página simples de site em construção.
 
-
 ------------
-
 
 ## 🎉 Começando
 
 1. **Fork este repositório.**
 
 2. **Clone sua cópia fork do projeto.**
+
    ```
    git clone https://github.com/<your_user_name>/Website-Template.git
    ```
+
 3. **Navegue até o diretório do projeto.**
+
    ```
    cd website-template
    ```
+
 4. **Adicione referência ao repositório original (remoto).**
+
    ```
    git remote add upstream https://github.com/Diptenusarkar/Website-Template.git
    ```
+
 5. **Antes de fazer qualquer alteração no repositório, sempre busque e faça pull do repositório upstream para manter sua ramificação atualizada com o repositório pai.**
+
    ```
    git pull upstream principal
    ```
+
 6. **Crie uma nova ramificação.**
+
    ```
    git checkout -b <your_branch_name>
    ```
+
 7. **Crie sua pasta de modelos, trabalhe nela.**
+
     ```
     Ex. "Site Escolar"
     ```
-8. **Mova suas alterações para a área de teste do git.**
+
+8. **Mova suas alterações para a área de preparação do git.**
+
    ```
-   git adicionar.
+   git add.
    ```
-9. **Confirme suas alterações na área de teste.**
+
+9. **Confirme suas alterações na área de preparação.**
+
    ```
    git commit -m "<mensagem relevante>"
    ```
+
 10. **Envie as alterações confirmadas em seu branch local para o branch de seu repositório remoto.**
+
     ```
-    git push -u origem <your_branch_name>
+    git push -u origin <your_branch_name>
     ```
+
 11. **Faça um pull request (PR).** 🚀
 
 ## Nossos colaboradores
