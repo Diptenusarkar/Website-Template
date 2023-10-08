@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #qr-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #qrcode {
+            margin-top: 20px;
+        }
+
+        #download-link {
+            display: none;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        #download-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <form id="qr-form" action="javascript:void(0)" method="post">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Generate QR Code</button>
+    </form>
+    <br>
+    <div id="qrcode"></div>
+    <a id="download-link" style="display: none;" download="qr_img.png">Download QR Code</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.getElementById("qr-form").addEventListener("submit", async function (e) {
+            e.preventDefault(); // Prevent the default form submission behavior
+            const url = document.getElementById("url").value;
+
+            try {
+                const response = await axios.post("http://localhost:3000/generate_qr", { url });
+                const data = response.data;
+
+                document.getElementById("qrcode").innerHTML = `<img src="${data.qr_image}" alt="QR Code">`;
+                const downloadLink = document.getElementById("download-link");
+                downloadLink.href = data.qr_image;
+                downloadLink.style.display = "block";
+            } catch (error) {
+                console.error("An error occurred:", error);
+            }
+        });
+    </script>
+</body>
+</html>
