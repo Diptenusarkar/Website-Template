@@ -35,11 +35,6 @@ nav ol {
   justify-content: space-between;
 }
 
-/* .paragraph{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-} */
-
 nav ol li {
   margin-left: 1.5rem;
 }
@@ -83,15 +78,8 @@ nav ol li a {
     min-height: 45rem;
     width: 100%;
   }
-  .recent__video-main {
-    display: flex;
-    flex-direction: column;
-    /* background-color: black; */
-  }
 
   .about__me {
-    /* background: red; */
-    /* width: 48%; */
     padding: 2rem 8%;
     display: flex;
     flex-direction: column;
@@ -114,16 +102,8 @@ nav ol li a {
     text-align: center;
   }
 
-  .contact-map {
-    width: 100%;
-  }
-  .contact-map iframe {
-    width: 100%;
-    height: 450px;
-  }
 
   .upcoming__tour-main {
-    /* background: black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -174,15 +154,10 @@ nav ol li a {
   text-align: center;
   background: rgba(0, 0, 0, 0.123);
   padding: 2rem 0;
+  margin-top: 1rem;
 }
 
-/* .recent__video-textBox {
-    background: crimson;
-} */
-
 .recent__video-textBox {
-  /* text-align: center;
-    background: rgba(0, 0, 0, 0.377); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,32 +179,23 @@ nav ol li a {
   width: 60%;
 }
 
-.recent__video-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8%;
-  /* background-color: black; */
-}
-
 .recent__video-box {
   display: flex;
-  margin-top: 2%;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   align-items: center;
-  height: fit-content;
   justify-content: space-between;
 }
 
-.recent__video-box video {
-  width: 95%;
-  height: 100%;
+.video-source {
+  max-width: 95%;
 }
 
 /* ! recent video end  */
 
 .about__me {
-  /* background: red; */
-  /* width: 48%; */
   padding: 2rem 8%;
   display: flex;
   align-items: center;
@@ -269,104 +235,106 @@ nav ol li a {
 
 /* ! about me end */
 
+/* Common styles for .contact-form and its children */
+
 .contact {
   background: rgba(0, 0, 0, 0.123);
-  padding: 2rem 8%;
+  padding: 10px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  flex: 1 1 auto;
+  justify-content: center;
+   /* flex: 1 1 auto;  */
 }
 
-.contact-map iframe {
-  border-radius: 8px;
+.contact-map{
+  max-width: 500px;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 15px 30px;
+}
 
 .contact-form form {
   text-align: center;
 }
 
-.contact-form-box {
-  /* background: green; */
-  padding: 2rem;
-  /* text-align: center; */
-}
-
-.contact-form-box label {
+/* Styles for labels */
+.contact-form label {
   font-size: 2rem;
   margin-right: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
 }
 
-.contact-form-box input {
+/* Styles for input fields */
+.contact-form input {
   padding: 1.4rem;
-  /* border-radius: 8px; */
-  width: 80%;
+  border-radius: 8px;
+  width: 100%; /* Use 100% width for input fields */
   font-size: 1.7rem;
+  outline: none; /* Remove outline on focus */
 }
 
-.contact-form-box input:focus {
-  outline: none;
-}
-
-.contact-form-box textarea {
-  min-width: 75%;
-  max-width: 75%;
-  min-height: 13rem;
-  max-height: 13rem;
+/* Styles for textarea */
+.contact-form textarea {
+  min-width: 100%; /* Use 100% width for textarea */
+  min-height: 8rem;
+  max-height: 5rem;
   font-size: 1.7rem;
   padding: 1.4rem;
-
-.contact-form{
-  background-color: rgba(2, 119, 134, 0.356);
+  resize: vertical;
 }
-form { max-width:420px; margin:50px auto; }
 
+/* Styles for .feedback-input */
 .feedback-input {
-  color:white;
+  color: white;
   font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #CC6666;
+  border: 2px solid #CC6666;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
-  outline:0;
-
+  outline: 0;
 }
 
-.feedback-input:focus { border:2px solid #CC4949; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
+.feedback-input:focus {
+  border: 2px solid #CC4949;
 }
 
+/* Styles for submit button */
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#CC6666;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
+  background: #CC6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+  margin-top: -4px;
+  font-weight: 700;
 }
-[type="submit"]:hover { background:#CC4949; }
-/* ! contact form end  */
+
+[type="submit"]:hover {
+  background: #CC4949;
+}
+
+
 @media only screen and (min-width: 600px) {
   .header__hero.header__hero-box1 {
     min-height: 45rem;
@@ -379,31 +347,29 @@ textarea {
   .about__me-textBox {
     width: 48%;
     text-align: center;
-    /* background: black; */
   }
   .about__me-imgBox {
-    /* background: gray; */
     width: 48%;
   }
   .contact-form {
     width: 45%;
-    background: rgba(2, 119, 134, 0.356);
     border-radius: 8px;
   }
   form{
     margin: 50px auto;
   }
   
-  .contact-map iframe {
-    width: 100%;
-    height: 450px;
-  }
   .contact-map {
-    width: 45%;
+    width: 350%;
     background: gray;
   }
+  .contact-map iframe {
+    width: 100%;
+    height: 350px;
+  }
+  
   .recent__video-box {
-    width: 33%;
+    width: 95%;
   }
 }
 .upcoming__tour {
@@ -419,7 +385,6 @@ textarea {
 }
 
 .upcoming__tour-main {
-  /* background: black; */
   display: flex;
   align-items: center;
   justify-content:space-evenly;
@@ -430,10 +395,6 @@ textarea {
   transition: box-shadow .3s;
   transition: transform 0.3s;
   height: 34rem;
-  /* background: red; */
-  /* width: 32%; */
-  /* outline: 1px solid #000000; */
-  /* margin: 1rem; */
   text-align: center;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -446,7 +407,6 @@ textarea {
 }
 .upcoming__tour-box figure {
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 .upcoming__tour-box figure img {
@@ -466,25 +426,16 @@ textarea {
 
 footer {
   padding: 2rem 8%;
-
   background: rgba(0, 0, 0, 0.123);
-  
-
-  /* background: rgba(0, 0, 0, 0.123); */
   background-color: #131c27;;
-
 }
 
 footer p {
   font-size: 1.9rem;
-
   color: #000000;
   margin-left: 33%;
-
-  /* color: #000000; */
   color: #fff;
   text-align: center;
-
 }
 
 /* mobile nav view */
@@ -499,7 +450,7 @@ footer p {
     margin-left: 7%;
     margin-top: 7%;
     z-index: 1;
-width: 20%;
+    width: 20%;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -507,7 +458,6 @@ width: 20%;
   #menuToggle a {
     text-decoration: none;
     color: #232323;
-
     transition: color 0.3s ease;
   }
 
@@ -522,12 +472,9 @@ width: 20%;
     position: absolute;
     top: -7px;
     left: -5px;
-
     cursor: pointer;
-
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
-
     -webkit-touch-callout: none;
   }
 
@@ -540,14 +487,10 @@ width: 20%;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-
     background: #cdcdcd;
     border-radius: 3px;
-
     z-index: 1;
-
     transform-origin: 4px 0px;
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
@@ -595,7 +538,6 @@ width: 20%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -603,7 +545,6 @@ width: 20%;
 
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
@@ -612,9 +553,7 @@ width: 20%;
     font-size: 22px;
   }
 
-  /*
-    * And let's slide it in from the left
-    */
+     /* And let's slide it in from the left */
   #menuToggle input:checked ~ ul {
     transform: none;
   }
