@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #272727;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px auto;
+    padding: 10px;
+    color: #ffff;
+}
+
+.container {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid #ffff;
+    overflow: auto;
+}
+
+.thumb {
+    width: 200px;
+    float:left;
+    border: 2px solid #ffff;
+    box-sizing: border-box;
+}
+
+
+.thumb:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* animasi fade */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; 
+    /* fordwar: berhenti di keadaan terakhir */
+}
+
+.active {
+    opacity: 0.5;
+}
