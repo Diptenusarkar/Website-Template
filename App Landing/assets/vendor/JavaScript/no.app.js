@@ -1,1 +1,0 @@
-const noApp = 'No app deta';
