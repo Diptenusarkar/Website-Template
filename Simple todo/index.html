@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <h1><center>Coffee Tasks</center></h1>
+    
   </head>
-  <body>
-    <div class="wrapper">
+  <body class="light-mode">
+    <h1><center>Coffee Tasks</center></h1>
+    <label class="switch" id="mode-toggle">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider round"></span>
+    </label>
+    <section class="wrapper" id="wrapper">
       <div class="task-input">
       
-        <input type="text" placeholder="Add a new task">
+        <input type="text" placeholder="Add a new task" id="input">
       </div>
       <div class="controls">
         <div class="filters">
@@ -23,7 +28,7 @@
         <button class="clear-btn">Clear All</button>
       </div>
       <ul class="task-box"></ul>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 

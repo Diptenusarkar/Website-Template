@@ -104,3 +104,23 @@ taskInput.addEventListener("keyup", e => {
         showTodo(document.querySelector("span.active").id);
     }
 });
+
+// dark mode 
+const modeToggle = document.getElementById("mode-toggle");
+const body = document.body;
+const input=document.getElementById('input')
+const wrapper=document.getElementById('wrapper')
+const darkLightStyle = document.getElementById("dark-light-style");
+
+modeToggle.addEventListener("change", () => {
+    if (body.classList.contains("dark-mode")) {
+        body.classList.remove("dark-mode");
+        input.classList.remove('dark-mode')
+        wrapper.classList.remove("dark-mode")
+
+    } else {
+        body.classList.add("dark-mode");
+        wrapper.classList.add("dark-mode")
+        input.classList.add('dark-mode')
+    }
+});
