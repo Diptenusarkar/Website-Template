@@ -1,0 +1,66 @@
+body {
+  background: rgb(255,255,255);
+
+}
+.page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+
+}
+.page[data-size="A4"]{
+  width: 21cm;
+  height: 29.7cm;
+}
+p {
+  font: 12pt Georgia, "Times New Roman", Times, serif;
+  line-height: 1.3;
+}
+p.address {
+  color: black;
+  text-align: right;
+  padding-top: 8em;
+}
+p.insideaddress {
+  color: black;
+  text-align: left;
+  padding-top: 2em;
+}
+p.date {
+  color: black;
+  text-align: right;
+    padding-top: 4em;
+}
+p.greetings {
+  color: black;
+  text-align: left;
+    padding-top: 2em;
+}
+p.letter {
+  color: black;
+  text-align: center;
+    padding-top: 1em;
+}
+p.closing{
+  color: black;
+  text-align: left;
+    padding-top: 3em;
+}
+p.name{
+  color: black;
+  text-align: left;
+   padding-top: 6em;
+}
+
+@media print {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+  }
+@page
+    {
+        size: auto;
+        margin: 25mm 25mm 25mm 25mm;
+
+  }
+}
