@@ -2,10 +2,14 @@
 const express = require("express");
 const router = express.Router();
 const slots  = require("../schema/slots")
-router.get('/slots', async (req, res) => {
-    
+eouter.get('/slots', async (req, res) => {
+  try {
     const slotsList = await slots.find();
-    console.log("slots", slots)
-    res.send(slotsList)
-})
+    console.log("slotsList", slotsList);
+    res.send(slotsList);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
 module.exports = router
