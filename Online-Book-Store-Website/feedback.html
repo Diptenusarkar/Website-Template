@@ -1,0 +1,235 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="./css/style.css">  
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <title> Feedback </title>
+<style>    
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+    
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head>    
+<body>
+    
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Books4MU </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#featured">featured</a>
+            <a href="./category.html">category</a>
+            <a href="#reviews">reviews</a>
+            <a href="#blogs">feedback</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#feedback" class="fas fa-feedback"></a>
+</nav>
+
+
+<h2>FEED BACK FORM</h2>    
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country">    
+            <option value="none">Select Country</option>       
+          <option value="usa">USA</option>      
+          <option value="india">India</option>      
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+ 
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>our locations</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="./index.html"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Category </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+          <a href="./feedback.html"> <i class="fas fa-arrow-right"></i> feedback </a>
+      </div>
+
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> 9167064054 </a>
+          <a href="#"> <i class="fas fa-phone"></i> 77388 44717 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> kordepriyanka1118@gmail.com </a>
+          <a href="#"> <i class="fas fa-envelope"></i> rohitmishra.rm2106@gmail.com </a>
+          <img src="image/worldmap.png" class="map" alt="">
+      </div>
+      
+  </div>
+
+  <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="https://twitter.com/priyankakorde" class="fab fa-twitter"></a>
+      <a href="https://www.instagram.com/im_priyankak_/" class="fab fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/priyanka-korde-2029521a1/" class="fab fa-linkedin"></a>
+      <a href="https://www.linkedin.com/in/rohit-m-3494521a2/" class="fab fa-linkedin"></a>
+  </div>
+
+  <div class="credit"> created by <span>Priyanka Korde & Rohit Mishra </span>copyright &copy;2022 all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<script src="./js/script.js"></script>
+</body>    
+</html>    
