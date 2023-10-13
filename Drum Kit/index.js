@@ -7,6 +7,7 @@ let tom4 = new Audio("sounds/tom-4.mp3");
 let snare = new Audio("sounds/snare.mp3");
 let crash = new Audio("sounds/crash.mp3");
 let kick = new Audio("sounds/kick-bass.mp3");
+let boom = new Audio("sounds/boom.wav");
 
 // Detecting button press
 for (let i = 0; i < numberOfDrumButtons; i++) {
@@ -19,8 +20,14 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
 
 // Detecting keyboard press
 document.addEventListener("keydown", function (event) {
-  makeSound(event.key);
-  buttonAnimation(event.key);
+  if(event.key == " ") {
+    makeSound("space")
+    buttonAnimation("space");
+  }else{
+    makeSound(event.key);
+    buttonAnimation(event.key);
+
+  }
 });
 
 function makeSound(key) {
@@ -51,6 +58,13 @@ function makeSound(key) {
 
     case "l":
       kick.play();
+      break;
+
+    case "space" :
+      boom.play();
+      break;
+    case " " :
+      boom.play();
       break;
 
     default:
