@@ -69,12 +69,12 @@
         },
         image: [
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/skull-and-crossbones_2620-fe0f.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-0106.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/ghost_1f47b.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-0111.png",
             width: 100,
             height: 100,
           },

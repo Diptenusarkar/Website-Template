@@ -69,37 +69,37 @@
         },
         image: [
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/rose_1f339.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-2886.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/sunflower_1f33b.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-2889.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/bouquet_1f490.pngs",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-2881.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/bouquet_1f490.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-2881.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/tulip_1f337.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-2891.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/rosette_1f3f5-fe0f.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-2890.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/cherry-blossom_1f338.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-2888.png",
             width: 100,
             height: 100,
           },
