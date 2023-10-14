@@ -13,12 +13,15 @@ html {
     margin: 0;
     font-family: 'Amatic SC', cursive;
   }
-  
+  .parent{
+    position: relative;
+  }
   h1 {
     text-align: center;
     font-size: 10rem;
     line-height: 1;
     margin-bottom: 0;
+   
   }
   
   .score {
@@ -33,7 +36,7 @@ html {
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 100px auto;
   }
   
   .hole {
@@ -66,4 +69,23 @@ html {
   
   .hole.up .mole {
     top: 0;
+  }
+
+  .btn{
+    padding: 10px 40px;
+    text-decoration: none;
+    border:1px solid #ffc600;
+    background-color: black;
+    color: #ffc600;
+    position: absolute;
+    top: 130%;
+    right: 48%;
+    font-size: 20px;
+  }
+
+  .btn:hover{
+    color: black;
+    background-color: #ffc600;
+    cursor: pointer;
+    border: 1px solid black;
   }

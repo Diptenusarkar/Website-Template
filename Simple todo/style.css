@@ -10,12 +10,14 @@ body{
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #fafafa, #fafafa);
+
 }
 ::selection{
   color: #fff;
   background: #611707;
 }
+
+
 .wrapper{
   max-width: 405px;
   padding: 28px 0 30px;
@@ -214,4 +216,90 @@ body{
   .task label input{
     margin-top: 4px;
   }
+}
+
+
+/* dark mode */
+/* Your existing styles here */
+/* ... */
+
+/* Additional styles for dark/light mode toggle switch */
+.switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Style for the round knob in dark mode */
+.dark-mode input:checked + .slider:before {
+    background-color: #fff;
+}
+
+/* Light mode styles */
+body.light-mode {
+    /* Your existing light mode styles here */
+    /* background-color: #fafafa; */
+    color: #000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    /* Your existing dark mode styles here */
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+section.dark-mode{
+  background-color: #272727;
+  color: #fff;
+}
+
+ input.dark-mode{
+  background-color: #282828;
+  color: #fff;
 }

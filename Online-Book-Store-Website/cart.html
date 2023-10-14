@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cart page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/cart.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./favicon_io/site.webmanifest">
+
+
+</head>
+<body>
+<!-- header section starts -->
+
+  <header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Books4MU </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#featured">featured</a>
+            <a href="./category.html">category</a>
+            <a href="#reviews">reviews</a>
+            <a href="#blogs">feedback</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- partial:index.partial.html -->
+<div class="wrap cf">
+  <div class="heading cf">
+    <h1>My Cart</h1>
+    <a href="#" class="continue">Continue Shopping</a>
+  </div>
+  <div class="cart">
+<!--    <ul class="tableHead">
+      <li class="prodHeader">Product</li>
+      <li>Quantity</li>
+      <li>Total</li>
+       <li>Remove</li>
+    </ul>-->
+    <ul class="cartWrap">
+      <li class="items odd">
+        
+    <div class="infoWrap"> 
+        <div class="cartSection">
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Engineering Drawing</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus"> In Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+              <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+      </div>
+      </li>
+      <li class="items even">
+        
+       <div class="infoWrap"> 
+        <div class="cartSection">
+         
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Software Engineering</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus"> In Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+              <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+      </div>
+      </li>
+      
+            <li class="items odd">
+             <div class="infoWrap"> 
+        <div class="cartSection">
+            
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Engineering Mathematics-1</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus out"> Out of Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+                    <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+              </div>
+      </li>
+      <li class="items even">
+         <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
+      </li>
+      
+      
+      <!--<li class="items even">Item 2</li>-->
+ 
+    </ul>
+  </div>
+  
+  <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+  <a href="#" class="btn"></a></div>
+  
+  <div class="subtotal cf">
+    <ul>
+      <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+      
+          <li class="totalRow"><span class="label">Shipping</span><span class="value">$5.00</span></li>
+      
+            <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
+            <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
+      <li class="totalRow"><a href="form-validation.html" class="btn continue">Checkout</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+  <a href="#home" class="fas fa-home"></a>
+  <a href="#featured" class="fas fa-list"></a>
+  <a href="#arrivals" class="fas fa-tags"></a>
+  <a href="#reviews" class="fas fa-comments"></a>
+  <a href="#feedback" class="fas fa-feedback"></a>
+
+</nav>
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>our locations</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="./index.html"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Category </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
+          <a href="./feedback.html"> <i class="fas fa-arrow-right"></i> feedback </a>
+      </div>
+
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> 9167064054 </a>
+          <a href="#"> <i class="fas fa-phone"></i> 77388 44717 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> kordepriyanka1118@gmail.com </a>
+          <a href="#"> <i class="fas fa-envelope"></i> rohitmishra.rm2106@gmail.com </a>
+          <img src="image/worldmap.png" class="map" alt="">
+      </div>
+      
+  </div>
+
+  <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="https://twitter.com/priyankakorde" class="fab fa-twitter"></a>
+      <a href="https://www.instagram.com/im_priyankak_/" class="fab fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/priyanka-korde-2029521a1/" class="fab fa-linkedin"></a>
+      <a href="https://www.linkedin.com/in/rohit-m-3494521a2/" class="fab fa-linkedin"></a>
+  </div>
+
+  <div class="credit"> created by <span>Priyanka Korde & Rohit Mishra </span>copyright &copy;2022 all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./js/cart.js"></script>
+
+</body>
+</html>

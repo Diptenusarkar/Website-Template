@@ -1,37 +1,30 @@
+const ratings = document.querySelectorAll('.rating');
+const ratingsContainer = document.querySelector('.ratings-container');
+const sendBtn = document.querySelector('#send');
+const panel = document.querySelector('#panel');
 
-const ratings = document.querySelectorAll('.rating')
-const ratingsContainer = document.querySelector('.ratings-container')
-const sendBtn = document.querySelector('#send')
-const panel = document.querySelector('#panel')
-let selectedRating = 'Satisfied'
+let selectedRating = 'Satisfied';
 
 ratingsContainer.addEventListener('click', (e) => {
-    if (e.target.parentNode.classList.contains('rating')) {
-        removeActive()
-        e.target.parentNode.classList.add('active')
-        selectedRating = e.target.nextElementSibling.innerHTML
+    if (e.target.parentNode.classList.contains('rating') || e.target.classList.contains('rating')) {
+        removeActive();
+        e.target.closest('.rating').classList.add('active');
+        selectedRating = e.target.closest('.rating').querySelector('small').innerText;
     }
-    if (e.target.classList.contains('rating')) {
-        removeActive()
-        e.target.classList.add('active')
-        selectedRating = e.target.nextElementSibling.innerHTML
-    }
+});
 
-})
-
-sendBtn.addEventListener('click', (e) => {
+sendBtn.addEventListener('click', () => {
     panel.innerHTML = `
-        
-        Thank You!
-        
-        Feedback : ${selectedRating}
-        We'll use your feedback to improve our customer support
-    `
-})
+        <div class="thank-you">
+            <h2>Thank You!</h2>
+            <p>Your Feedback: ${selectedRating}</p>
+            <p>We appreciate your input and will use it to enhance our customer support services.</p>
+        </div>
+    `;
+});
 
 function removeActive() {
-    for (let i = 0; i < ratings.length; i++) {
-        ratings[i].classList.remove('active')
-    }
+    ratings.forEach(rating => {
+        rating.classList.remove('active');
+    });
 }
-
