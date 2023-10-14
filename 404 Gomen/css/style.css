@@ -1,0 +1,236 @@
+html {
+    height: 100%;
+    background-color:turquoise;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    overflow: auto;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    height:100%;
+}
+
+.container {
+    padding-top: 10%;
+}
+
+.bubble-1 {
+    right: 300px;
+    animation-delay: 1.3s;
+}
+.bubble-1 .bubble-animation-y{
+    animation-delay: 0.7s;
+}
+
+.bubble-2 {
+    right: 33px;
+    animation-delay: 2s;
+}
+.bubble-2 .bubble-animation-y{
+    animation-delay: 2.1s;
+}
+
+.bubble-3 {
+    right: 225px;
+    animation-delay: 0s;
+}
+.bubble-3 .bubble-animation-y{
+    animation-delay: 3.8s;
+}
+
+.bubble-4 {
+    left: 200px;
+    animation-delay: 0s;
+}
+.bubble-4 .bubble-animation-y{
+    animation-delay: 6s;
+}
+
+.bubble-5 {
+    left: 115px;
+    animation-delay: 1.5s;
+}
+.bubble-5 .bubble-animation-y{
+    animation-delay: 7s;
+}
+.bubble2-1 {
+    right: 100px;
+    animation-delay: 1.5s;
+}
+.bubble2-1 .bubble2-animation-y{
+    animation-delay: 0.7s;
+}
+
+.bubble2-2 {
+    left: 100px;
+    animation-delay: 2s;
+}
+.bubble2-2 .bubble2-animation-y{
+    animation-delay: 1s;
+}
+
+.bubble2-3 {
+    left: 40px;
+    animation-delay: 5s;
+}
+.bubble2-3 .bubble2-animation-y{
+    animation-delay: 5s;
+}
+.moji-1 {
+    left: 50px;
+    animation-delay: 0s;
+}
+.moji-1 .moji-animation-y{
+    animation-delay: 3s;
+}
+.moji-2 {
+    right: 100px;
+    animation-delay: 1.5s;
+}
+.moji-2 .moji-animation-y{
+    animation-delay: 3s;
+}
+.moji-3 {
+    right: 50px;
+    animation-delay: 0.5s;
+}
+.moji-3 .moji-animation-y{
+    animation-delay: 4s;
+}
+
+.bubble-container {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+}
+.bubble2-container {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+}
+.moji-container {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+}
+
+.bubble {
+    background-image:url(../img/PIEN.png);
+    opacity: 100%;
+    width: 45px;
+    height: 45px;
+}
+.bubble2 {
+    background-image:url(../img/PIEN2.png);
+    opacity: 100%;
+    width: 45px;
+    height: 45px;
+}
+.moji {
+    background-image:url(../img/GOMEN.png);
+    opacity: 100%;
+    width: 161px;
+    height: 43px;
+}
+
+.bubble-animation-x {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bubbleXAnimFrames;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.bubble2-animation-x {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bubbleXAnimFrames;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+.bubble-animation-y {
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: bubbleYAnimFrames;
+    animation-timing-function: linear;
+}
+.bubble2-animation-y {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: bubbleYAnimFrames;
+    animation-timing-function: linear;
+}
+.moji-animation-x {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: mojiXAnimFrames;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+.moji-animation-y {
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: mojiYAnimFrames;
+    animation-timing-function: linear;
+}
+
+@keyframes bubbleXAnimFrames {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes bubbleYAnimFrames {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    95% {
+        transform: translateY(-95vh);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes mojiXAnimFrames {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes mojiYAnimFrames {
+    0% {
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0vh);
+        opacity: 0.5;
+    }
+    95% {
+        transform: translateY(-95vh);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
