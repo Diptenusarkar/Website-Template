@@ -1,3 +1,5 @@
+
+//Page 4 Js Code
 var canvas = document.createElement("canvas");
 var width = canvas.width = window.innerWidth * 0.75;
 var height = canvas.height = window.innerHeight * 0.75;
