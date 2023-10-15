@@ -69,22 +69,22 @@
         },
         image: [
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/grinning-face_1f600.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-0005.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/grinning-face-with-big-eyes_1f603.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-0002.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/grinning-face-with-smiling-eyes_1f604.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-0002.png",
             width: 100,
             height: 100,
           },
           {
-            src: "https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/beaming-face-with-smiling-eyes_1f601.png",
+            src: "https://www.imagenspng.com.br/wp-content/uploads/2022/11/emoji-png-0008.png",
             width: 100,
             height: 100,
           },
