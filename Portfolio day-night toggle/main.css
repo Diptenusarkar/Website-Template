@@ -257,11 +257,9 @@ i {
   gap: 2rem;
 }
 
-footer {
-  display: inline-block;
-  color: #9cc5a1;
-  font-family: "Roboto", sans-serif;
-  background-color: #4a4a4a;
-  padding: 2em;
-  width: 100%;
+.copyright{
+  color: white;
+  font-size: larger;
+  text-align: center;
+  bottom: 0;
 }
