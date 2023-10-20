@@ -74,74 +74,75 @@ _Read in other languages:_
 |53 | [Grid Layout - bootstrap 3](./Grid%20Layout%20Templates/Grid%20Layout%20using%20bootstrap/)       | [click here](./Grid%20Layout%20Templates/Grid%20Layout%20using%20bootstrap/img/template3.png)          |
 |54 | [Grid Layout using simple CSS](./Grid%20Layout%20Templates/Grid%20Layout%20using%20simple%20CSS/) | [click here](./Grid%20Layout%20Templates/Grid%20Layout%20using%20simple%20CSS/img/template.png)                       |
 |55 | [HamBurgerPage](./HamBurgerPage/)                                          | [click here](./HamBurgerPage/screenshots/Capture2.PNG)                   |
-|56 | [infinite scroll](./infinite%20scroll/)                                    | [click here](./infinite%20scroll/img/template.png)                       |
-|57 | [Interactive Tabs](./Interactive%20Tabs/)                                  | [click here](./Interactive%20Tabs/img/template.png)                      |
-|58 | [Library_management](./Library_management/)                                | unavailable                                                              |
-|59 | [LoadingAnimationButtonTemplate](./LoadingAnimationButtonTemplate/)        | [click here](./LoadingAnimationButtonTemplate/img/template.png)          |
-|60 | [Login Page 1](./Login%20Page/)                                            | [click here](./Login%20Page/img/template1.png)                           |
-|61 | [Login Page 2](./Login%20Page/)                                            | [click here](./Login%20Page/img/template2.png)                           |
-|62 | [Login Page template](./Login%20Page%20Template/)                          | [click here](./Login%20Page%20Template/img/template.png)                 |
-|63 | [Mansory Layout](./Mansory%20Layout/)                                      | [click here](./Mansory%20Layout/img/template.png)                        |
-|64 | [Medical Template](./Medical%20Template/)                                  | [click here](https://user-images.githubusercontent.com/50952901/146409848-4297e971-f71e-4974-8cd0-4ac0095135cb.jpeg)     |
-|65 | [Memory-Game](./Memory-Game/)                                              | [click here](./Memory-Game/img/template.png)                             |
-|66 | [Microsoft-clone](./Microsoft-clone/)                                      | [click here](./Microsoft-clone/img/template.png)                         |
-|67 | [Mole game](./mole%20game/)                                                | [click here](./mole%20game/img/template.png)                             |
-|68 | [MusicPlayer Template](./MusicPlayer%20Template/)                          | [click here](./MusicPlayer%20Template/img/template.png)                  |
-|69 | [News Template 1 - Blog](./News%20Template%201/)                           | [click here](./News%20Template%201/img/template.png)                     |
-|70 | [Nextjs-template](./nextjs-template/)                                      | unavailable                                                              |
-|71 | [NightMode](./NightMode/)                                                  | [click here](./NightMode/img/template.png)                               |
-|72 | [Nxt-auth-boiler](./nxt-auth-boiler/)                                      | unavailable                                                              |
-|73 | [Parallax Design](./Parallax%20Design/)                                    | [click here](./Parallax%20Design/Images/demo.jpg)                        |
-|74 | [Payment Form](./Payment%20Form/)                                          | [click here](./Payment%20Form/img/template.png)                          |
-|75 | [Payment-Gateway - template](./Payment%20Form/)                            | [click here](./Payment-Gateway%20-template/img/template.png)             |
-|76 | [Pizza Delicacies](./Pizza%20Delicacies/)                                  | [click here](./Pizza%20Delicacies/images/template.png)                   |
-|77 | [Playlist-carousel](./playlist-carousel/)                                  | [click here](./playlist-carousel/img/template.png)                       |
-|78 | [Portfolio](./portfolio/)                                                  | [click here](./portfolio/img/template.png)                               |
-|79 | [Portfolio day-night toggle](./Portfolio%20day-night%20toggle/)            | [click here](./Portfolio%20day-night%20toggle/img/template.png)          |
-|80 | [Price Template](./Price%20Template/)                                      | [click here](./Price%20Template/img/template.png)                        |
-|81 | [ProfileHover](./ProfileHover/)                                            | [click here](./ProfileHover/img/template.png)                            |
-|82 | [QR_CODE_GENERATOR](./QR_CODE_GENERATOR/)                                  | [click here](./QR_CODE_GENERATOR/qr_img.png)                             |
-|83 | [QUIZ--APP](./QUIZ--APP/)                                                  | [click here](./QUIZ--APP/img/template.png)                               |
-|84 | [Quiz-template-in-React](./Quiz-template-in-React/)                        | unavailable                                                              |
-|85 | [Quote-site](./Quote-site/)                                                | [click here](./Quote-site/img/template.png)                              |
-|86 | [React-template](./Quote-site/)                                            | unavailable                                                              |
-|87 | [Registration-login form](./Registration-login%20form/)                    | [click here](./Registration-login%20form/img/template.png)               |
-|88 | [Responsive NavBar Using TailwindCSS](./Responsive%20NavBar%20Using%20TailwindCSS/)                 | [click here](./Responsive%20NavBar%20Using%20TailwindCSS/img/template.png)                       |
-|89 | [Responsive Navigation Bar using Bootstrap](./Responsive%20Navigation%20Bar%20using%20Bootstrap/)   | [click here](./Responsive%20Navigation%20Bar%20using%20Bootstrap/img/template.png)               |
-|90 | [Responsive-Footer-Template](./Responsive-Footer-Template/)                                         | [click here](./Responsive-Footer-Template/img/template.png)                                      |
-|91 | [Restaraunt Website](./Restaraunt%20Website/)                              | [click here](./Restaraunt%20Website/img/template.png)                      |
-|92 | [Restaurant Template](./Restaurant%20Template/)                            | [click here](./Restaurant%20Template/img/template.png)                     |
-|93 | [Restaurant Website 2](./Restaurant%20Website2/)                           | [click here](./Restaurant%20Website2/img/template.png)                     |
-|94 | [ROADMAP](./ROADMAP/)                                                      | [click here](./ROADMAP/img/template.png)                                   |
-|95 | [Rock Paper Scissor](./Rock%20Paper%20Scissor/)                            | [click here](./Rock%20Paper%20Scissor/images/template.png)                 |
-|96 | [Rotating images](./Rotating%20images/)                                    | [click here](./Rotating%20images/img/template.png)                         |
-|97 | [Rotating sidebar](./Rotating%20sidebar/)                                  | [click here](./Rotating%20sidebar/img/template.png)                        |
-|98 | [Searchbar](./Searchbar/)                                                  | [click here](./Searchbar/img/template.png)                                 |
-|99 | [Sidebar and Navbar Mobile](./Sidebar%20and%20Navbar%20Mobile/)            | [click here](./Sidebar%20and%20Navbar%20Mobile/img/template.png)           |
-|100| [Sign up form](./sign%20up%20form/)                                        | [click here](./sign%20up%20form/img/template.png)                          |
-|101| [Simple todo](./Simple%20todo/)                                            | [click here](./Simple%20todo/img/template.png)                             |
-|102| [Socials Template](./Socials%20Template/)                                  | [click here](./Socials%20Template/img/template.png)                        |
-|103| [StickyNavbar](./StickyNavbar/)                                            | [click here](./StickyNavbar/img/template.png)                              |
-|104| [Student-Registeration-Form](./Student-Registeration-Form/)                | [click here](./Student-Registeration-Form/img/template.png)                |
-|105| [Template - 404 Page](./Template/404-Page/)                                | [click here](./Template/404-Page/img/template.png)                         |
-|106| [Template - ComingSoonTemplate](./Template/ComingSoonTemplate/)            | [click here](./Template/ComingSoonTemplate/img/template.png)               |
-|107| [Textutils](./textutils/)                                                  | unavailable                                                                |
-|108| [Theme Clock](./Theme%20Clock/)                                            | [click here](./Theme%20Clock/img/template.png)                             |
-|109| [Tic Tac Toe](./Tic%20Tac%20Toe/)                                          | [click here](./Tic%20Tac%20Toe/img/template.png)                           |
-|110| [Tic Tac Toe Game Template](./Tic%20Tac%20Toe%20Game%20Template/)          | unavailable                                                                |
-|111| [Timeline Design](./Timeline%20Design/)                                    | [click here](./Timeline%20Design/img/template.png)                         |
-|112| [Tip Calculator](./Tip%20Calculator/)                                      | [click here](./Tip%20Calculator/img/template.png)                          |
-|113| [todos-list](./todos-list/)                                                | unavailable                                                                |
-|114| [Travel Blog](./Travel%20Blog/)                                            | [click here](./Travel%20Blog/img/template.png)                             |
-|115| [Tribute Page Template](./Tribute%20Page%20Template/)                      | [click here](./Tribute%20Page%20Template/img/template.png)                 |
-|116| [Video Landing Page With Search Bar in React](./Video%20Landing%20Page%20With%20Search%20Bar%20in%20React/)                        | unavailable        |
-|117| [Videoplayer](./videoplayer/)                                              | [click here](./videoplayer/img/template.png)                               |
-|118| [Website Under construction](./Website%20Under%20construction/)            | [click here](./Website%20Under%20construction/img/template.png)            |
-|119| [Wikipedia_search](./wikipedia_search/)                                    | [click here](./wikipedia_search/img/template.png)                          |
-|120| [404 flower template](./404%20flower%20template/)                          | [click here](./404%20flower%20template/images/template.png)                |
-|121| [404 happy template](./404%20happy%20template/)                            | [click here](./404%20happy%20template/images/template.png)                 |
-|122| [404 skull template](./404%20skull%20template/)                            | [click here](./404%20skull%20template/images/template.png)                 |
-|123| [BrickBreake](./BrickBreaker/)                                             | unavailable                                                                |
+|56 | [Hangman Game](./Hangman%20Game/)                                          | [click here](./Hangman%20Game/Hangman.png)                   |
+|57 | [infinite scroll](./infinite%20scroll/)                                    | [click here](./infinite%20scroll/img/template.png)                       |
+|58 | [Interactive Tabs](./Interactive%20Tabs/)                                  | [click here](./Interactive%20Tabs/img/template.png)                      |
+|59 | [Library_management](./Library_management/)                                | unavailable                                                              |
+|60 | [LoadingAnimationButtonTemplate](./LoadingAnimationButtonTemplate/)        | [click here](./LoadingAnimationButtonTemplate/img/template.png)          |
+|61 | [Login Page 1](./Login%20Page/)                                            | [click here](./Login%20Page/img/template1.png)                           |
+|62 | [Login Page 2](./Login%20Page/)                                            | [click here](./Login%20Page/img/template2.png)                           |
+|63 | [Login Page template](./Login%20Page%20Template/)                          | [click here](./Login%20Page%20Template/img/template.png)                 |
+|64 | [Mansory Layout](./Mansory%20Layout/)                                      | [click here](./Mansory%20Layout/img/template.png)                        |
+|65 | [Medical Template](./Medical%20Template/)                                  | [click here](https://user-images.githubusercontent.com/50952901/146409848-4297e971-f71e-4974-8cd0-4ac0095135cb.jpeg)     |
+|66 | [Memory-Game](./Memory-Game/)                                              | [click here](./Memory-Game/img/template.png)                             |
+|67 | [Microsoft-clone](./Microsoft-clone/)                                      | [click here](./Microsoft-clone/img/template.png)                         |
+|68 | [Mole game](./mole%20game/)                                                | [click here](./mole%20game/img/template.png)                             |
+|69 | [MusicPlayer Template](./MusicPlayer%20Template/)                          | [click here](./MusicPlayer%20Template/img/template.png)                  |
+|70 | [News Template 1 - Blog](./News%20Template%201/)                           | [click here](./News%20Template%201/img/template.png)                     |
+|71 | [Nextjs-template](./nextjs-template/)                                      | unavailable                                                              |
+|72 | [NightMode](./NightMode/)                                                  | [click here](./NightMode/img/template.png)                               |
+|73 | [Nxt-auth-boiler](./nxt-auth-boiler/)                                      | unavailable                                                              |
+|74 | [Parallax Design](./Parallax%20Design/)                                    | [click here](./Parallax%20Design/Images/demo.jpg)                        |
+|75 | [Payment Form](./Payment%20Form/)                                          | [click here](./Payment%20Form/img/template.png)                          |
+|76 | [Payment-Gateway - template](./Payment%20Form/)                            | [click here](./Payment-Gateway%20-template/img/template.png)             |
+|77 | [Pizza Delicacies](./Pizza%20Delicacies/)                                  | [click here](./Pizza%20Delicacies/images/template.png)                   |
+|78 | [Playlist-carousel](./playlist-carousel/)                                  | [click here](./playlist-carousel/img/template.png)                       |
+|79 | [Portfolio](./portfolio/)                                                  | [click here](./portfolio/img/template.png)                               |
+|80 | [Portfolio day-night toggle](./Portfolio%20day-night%20toggle/)            | [click here](./Portfolio%20day-night%20toggle/img/template.png)          |
+|81 | [Price Template](./Price%20Template/)                                      | [click here](./Price%20Template/img/template.png)                        |
+|82 | [ProfileHover](./ProfileHover/)                                            | [click here](./ProfileHover/img/template.png)                            |
+|83 | [QR_CODE_GENERATOR](./QR_CODE_GENERATOR/)                                  | [click here](./QR_CODE_GENERATOR/qr_img.png)                             |
+|84 | [QUIZ--APP](./QUIZ--APP/)                                                  | [click here](./QUIZ--APP/img/template.png)                               |
+|85 | [Quiz-template-in-React](./Quiz-template-in-React/)                        | unavailable                                                              |
+|86 | [Quote-site](./Quote-site/)                                                | [click here](./Quote-site/img/template.png)                              |
+|87 | [React-template](./Quote-site/)                                            | unavailable                                                              |
+|88 | [Registration-login form](./Registration-login%20form/)                    | [click here](./Registration-login%20form/img/template.png)               |
+|89 | [Responsive NavBar Using TailwindCSS](./Responsive%20NavBar%20Using%20TailwindCSS/)                 | [click here](./Responsive%20NavBar%20Using%20TailwindCSS/img/template.png)                       |
+|90 | [Responsive Navigation Bar using Bootstrap](./Responsive%20Navigation%20Bar%20using%20Bootstrap/)   | [click here](./Responsive%20Navigation%20Bar%20using%20Bootstrap/img/template.png)               |
+|91 | [Responsive-Footer-Template](./Responsive-Footer-Template/)                                         | [click here](./Responsive-Footer-Template/img/template.png)                                      |
+|92 | [Restaraunt Website](./Restaraunt%20Website/)                              | [click here](./Restaraunt%20Website/img/template.png)                      |
+|93 | [Restaurant Template](./Restaurant%20Template/)                            | [click here](./Restaurant%20Template/img/template.png)                     |
+|94 | [Restaurant Website 2](./Restaurant%20Website2/)                           | [click here](./Restaurant%20Website2/img/template.png)                     |
+|95 | [ROADMAP](./ROADMAP/)                                                      | [click here](./ROADMAP/img/template.png)                                   |
+|96 | [Rock Paper Scissor](./Rock%20Paper%20Scissor/)                            | [click here](./Rock%20Paper%20Scissor/images/template.png)                 |
+|97 | [Rotating images](./Rotating%20images/)                                    | [click here](./Rotating%20images/img/template.png)                         |
+|98 | [Rotating sidebar](./Rotating%20sidebar/)                                  | [click here](./Rotating%20sidebar/img/template.png)                        |
+|99 | [Searchbar](./Searchbar/)                                                  | [click here](./Searchbar/img/template.png)                                 |
+|100 | [Sidebar and Navbar Mobile](./Sidebar%20and%20Navbar%20Mobile/)            | [click here](./Sidebar%20and%20Navbar%20Mobile/img/template.png)           |
+|101| [Sign up form](./sign%20up%20form/)                                        | [click here](./sign%20up%20form/img/template.png)                          |
+|102| [Simple todo](./Simple%20todo/)                                            | [click here](./Simple%20todo/img/template.png)                             |
+|103| [Socials Template](./Socials%20Template/)                                  | [click here](./Socials%20Template/img/template.png)                        |
+|104| [StickyNavbar](./StickyNavbar/)                                            | [click here](./StickyNavbar/img/template.png)                              |
+|105| [Student-Registeration-Form](./Student-Registeration-Form/)                | [click here](./Student-Registeration-Form/img/template.png)                |
+|106| [Template - 404 Page](./Template/404-Page/)                                | [click here](./Template/404-Page/img/template.png)                         |
+|107| [Template - ComingSoonTemplate](./Template/ComingSoonTemplate/)            | [click here](./Template/ComingSoonTemplate/img/template.png)               |
+|108| [Textutils](./textutils/)                                                  | unavailable                                                                |
+|109| [Theme Clock](./Theme%20Clock/)                                            | [click here](./Theme%20Clock/img/template.png)                             |
+|110| [Tic Tac Toe](./Tic%20Tac%20Toe/)                                          | [click here](./Tic%20Tac%20Toe/img/template.png)                           |
+|111| [Tic Tac Toe Game Template](./Tic%20Tac%20Toe%20Game%20Template/)          | unavailable                                                                |
+|112| [Timeline Design](./Timeline%20Design/)                                    | [click here](./Timeline%20Design/img/template.png)                         |
+|113| [Tip Calculator](./Tip%20Calculator/)                                      | [click here](./Tip%20Calculator/img/template.png)                          |
+|114| [todos-list](./todos-list/)                                                | unavailable                                                                |
+|115| [Travel Blog](./Travel%20Blog/)                                            | [click here](./Travel%20Blog/img/template.png)                             |
+|116| [Tribute Page Template](./Tribute%20Page%20Template/)                      | [click here](./Tribute%20Page%20Template/img/template.png)                 |
+|117| [Video Landing Page With Search Bar in React](./Video%20Landing%20Page%20With%20Search%20Bar%20in%20React/)                        | unavailable        |
+|118| [Videoplayer](./videoplayer/)                                              | [click here](./videoplayer/img/template.png)                               |
+|119| [Website Under construction](./Website%20Under%20construction/)            | [click here](./Website%20Under%20construction/img/template.png)            |
+|120| [Wikipedia_search](./wikipedia_search/)                                    | [click here](./wikipedia_search/img/template.png)                          |
+|121| [404 flower template](./404%20flower%20template/)                          | [click here](./404%20flower%20template/images/template.png)                |
+|122| [404 happy template](./404%20happy%20template/)                            | [click here](./404%20happy%20template/images/template.png)                 |
+|123| [404 skull template](./404%20skull%20template/)                            | [click here](./404%20skull%20template/images/template.png)                 |
+|124| [BrickBreake](./BrickBreaker/)                                             | unavailable                                                                |
 
 ## For Contributors
 
