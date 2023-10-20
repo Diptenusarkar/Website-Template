@@ -1,6 +1,7 @@
 # Maintenance Page
 
-![Maintenance Page Screenshot](screenshot.png)
+![maintainance page](https://github.com/PratyushSinha15/Website-Template/assets/122526404/f70caacb-9042-4d5b-bf0e-33b041601c3f)
+
 
 This is a simple maintenance page template designed for small and large screens. It includes a logo, a "We're Launching Soon" message, a countdown timer, and social media links.
 
@@ -45,5 +46,6 @@ You can replace the existing logo with your own by replacing the image file loca
 You can customize the styles of the page by modifying the `style.css` file. Adjust colors, fonts, button styling, or other visual elements to match your branding.
 
 ### Responsive Design
+![maintainance page small screen](https://github.com/PratyushSinha15/Website-Template/assets/122526404/e6266826-441c-42e2-aa8b-bc8b40e6e9ea)
 
 This page is designed to be responsive, meaning it will adapt to different screen sizes. You can adjust the breakpoints in the CSS media queries to further customize the design for different screen sizes.
