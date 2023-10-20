@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(/images/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 4%;
+}
+
+.logo {
+    width: 80px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.content h1 span {
+    color: #ff3753;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+
+.content button {
+    padding: 8px 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px auto 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content button img {
+    width: 16px;
+    margin-left: 6px;
+}
+
+.launch-time {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.launch-time div {
+    margin-right: 10px;
+    flex-basis: 80px;
+}
+
+.launch-time div p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ff3753;
+}
+
+
+.rocket {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .container {
+        padding: 0 8%;
+    }
+
+    .logo {
+        width: 120px;
+        padding: 20px 0;
+    }
+
+    .content {
+        text-align: left;
+    }
+
+    .content h1 {
+        font-size: 64px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .content button {
+        padding: 10px 30px;
+        font-size: 18px;
+        margin: 20px 0 10px; 
+        display: flex;
+        align-items: center;
+    }
+
+    .content button img {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    .launch-time {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .launch-time div {
+        margin-right: 20px;
+    }
+
+    .launch-time div p {
+        font-size: 32px;
+    }
+
+
+    .rocket {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        width: 250px;
+        animation: rocket 4s linear infinite;
+    }
+
+    @keyframes rocket {
+        0% {
+            bottom: 0;
+            opacity: 0;
+        }
+        100% {
+            bottom: 105%;
+            opacity: 1;
+        }
+    }
+}
