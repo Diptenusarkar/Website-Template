@@ -1,6 +1,6 @@
 # Maintenance Page
 
-![maintainance page](https://github.com/PratyushSinha15/Website-Template/assets/122526404/f70caacb-9042-4d5b-bf0e-33b041601c3f)
+![maintainance page](https://github.com/PratyushSinha15/Website-Template/assets/122526404/f6837b98-b9c7-4ea0-aa3e-c443d15f477f)
 
 
 This is a simple maintenance page template designed for small and large screens. It includes a logo, a "We're Launching Soon" message, a countdown timer, and social media links.
