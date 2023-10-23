@@ -1,7 +1,7 @@
-# Movie Recommendation App
+# Movie Recommendation Website
 
 ## About the Project
-<p>This app will recommend you some latest movies in different genres. You can also search for your desired movie and enjoy watching it. Dive in to explore further. </p>
+<p>This website will recommend you some latest movies in different genres. You can also search for your desired movie and enjoy watching it. Dive in to explore further. </p>
 
 ## Tech Stacks Used
 
@@ -19,8 +19,5 @@ After opening the app, UI looks like:
 At the bottom of the page you can see:
 <img src="./Assets/media/ss2.png" />
 
-## Live Demo
-
-<img src="./Assets/media/final_61cf23d0f9d9ba005ae89da9_388276.gif" />
 
 
