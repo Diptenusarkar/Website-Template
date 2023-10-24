@@ -15,11 +15,12 @@
     font-size: 4rem;
     line-height: 8rem;
     color: cornsilk;
-    margin-left: 238px;
+    text-align: center;
+    
 }
 
 body {
-    background-image: url(bgImg.jpg);
+    background-image: url(tictactoe.jpg);
 }
 
 .gameContainer {
