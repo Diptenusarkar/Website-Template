@@ -142,7 +142,8 @@ _Read in other languages:_
 |121| [404 flower template](./404%20flower%20template/)                          | [click here](./404%20flower%20template/images/template.png)                |
 |122| [404 happy template](./404%20happy%20template/)                            | [click here](./404%20happy%20template/images/template.png)                 |
 |123| [404 skull template](./404%20skull%20template/)                            | [click here](./404%20skull%20template/images/template.png)                 |
-|124| [BrickBreake](./BrickBreaker/)                                             | unavailable                                                                |
+|124| [BrickBreake](./BrickBreaker/)                                             | unavailable                          |                     
+|125| [Food Delivery](./food-delivery/)                                          | [click here](./food-delivery/img/Screenshot%202023-10-23%20223007.png)    |
 
 ## For Contributors
 
