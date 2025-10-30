@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coaching Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-hero {
+            background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 4rem 0 3rem 0;
+            text-align: center;
+        }
+        
+        .contact-section {
+            padding: 4rem 0;
+            background: #fff;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .contact-info h3 {
+            color: #2575fc;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: #2575fc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(1);
+        }
+        
+        .contact-details h4 {
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+        
+        .contact-details p {
+            margin: 0;
+            color: #666;
+        }
+        
+        .contact-details a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+        .map-container {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .map-container h3 {
+            color: #2575fc;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        #map {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .contact-form-container {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-top: 2rem;
+        }
+        
+        .contact-form-container h3 {
+            color: #2575fc;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        #contact-form {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        #contact-form input,
+        #contact-form textarea {
+            padding: 1rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        #contact-form input:focus,
+        #contact-form textarea:focus {
+            outline: none;
+            border-color: #2575fc;
+        }
+        
+        #contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .working-hours {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        
+        .working-hours h4 {
+            color: #2575fc;
+            margin-bottom: 1rem;
+        }
+        
+        .hours-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+        
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .contact-section {
+                padding: 2rem 0;
+            }
+            
+            .contact-info,
+            .map-container,
+            .contact-form-container {
+                padding: 1.5rem;
+            }
+            
+            #map {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar with Glassmorphism and Logo -->
+    <nav class="navbar-glass">
+        <div class="container nav-flex">
+            <div class="nav-logo">
+                <img src="https://img.icons8.com/ios-filled/50/2575fc/graduation-cap.png" alt="Logo" class="nav-logo-img">
+                Coaching Center
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <a href="#contact-form" class="cta-btn nav-admission-btn">Admission</a>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="hero-title">Get in <span>Touch</span></h1>
+            <p class="hero-subtitle">We're here to help you on your educational journey</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone">
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            <p><a href="tel:+919876543211">+91 98765 43211</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/mail.png" alt="Email">
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@coachingcenter.com">info@coachingcenter.com</a></p>
+                            <p><a href="mailto:admissions@coachingcenter.com">admissions@coachingcenter.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Address">
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>49/1, Nirmal Sen Gupta Sarani Rd<br>
+                            Italgacha, Dum Dum<br>
+                            Kolkata, West Bengal 700079<br>
+                            India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="working-hours">
+                        <h4>Working Hours</h4>
+                        <ul class="hours-list">
+                            <li>
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 8:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Saturday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Sunday</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Google Map -->
+                <div class="map-container">
+                    <h3>Our Location</h3>
+                    <div id="map"></div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h3>Send us a Message</h3>
+                <form id="contact-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="phone" placeholder="Your Phone Number">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-btn">Send Message</button>
+                </form>
+                <div id="contact-success" class="contact-success" style="display:none;">Thank you! Your message has been sent successfully.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-modern">
+        <div class="container">
+            <span>&copy; 2024 Coaching Center. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Google Maps API Script -->
+    <script>
+        // Initialize Google Maps
+        function initMap() {
+            // Coaching Center location coordinates (Kolkata, West Bengal, India)
+            const coachingCenter = { lat: 22.5726, lng: 88.3639 };
+            
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: coachingCenter,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"weight": "2.00"}]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{"color": "#9c9c9c"}]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text",
+                        "stylers": [{"visibility": "on"}]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [{"color": "#f2f2f2"}]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"color": "#ffffff"}]
+                    },
+                    {
+                        "featureType": "landscape.man_made",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"color": "#ffffff"}]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [{"visibility": "off"}]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [{"saturation": -100}, {"lightness": 45}]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"color": "#eeeeee"}]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{"color": "#7b7b7b"}]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{"color": "#ffffff"}]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [{"visibility": "simplified"}]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.icon",
+                        "stylers": [{"visibility": "off"}]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [{"visibility": "off"}]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [{"color": "#46bcec"}, {"visibility": "on"}]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"color": "#c8d7d4"}]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{"color": "#070707"}]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{"color": "#ffffff"}]
+                    }
+                ]
+            });
+            
+            // Add marker for Coaching Center
+            const marker = new google.maps.Marker({
+                position: coachingCenter,
+                map: map,
+                title: "Coaching Center",
+                icon: {
+                    url: "https://img.icons8.com/ios-filled/50/2575fc/marker.png",
+                    scaledSize: new google.maps.Size(40, 40)
+                }
+            });
+            
+            // Add info window
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="padding: 10px; max-width: 200px;">
+                        <h3 style="margin: 0 0 5px 0; color: #2575fc;">Coaching Center</h3>
+                        <p style="margin: 0; color: #666;">49/1, Nirmal Sen Gupta Sarani Rd<br>Italgacha, Dum Dum<br>Kolkata, West Bengal 700079</p>
+                    </div>
+                `
+            });
+            
+            marker.addListener("click", () => {
+                infoWindow.open(map, marker);
+            });
+        }
+    </script>
+    
+    <!-- Load Google Maps API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=DEMO_KEY&callback=initMap">
+    </script>
+
+    <script src="js/main.js"></script>
+    <script>
+    // Mobile menu toggle
+    document.getElementById('nav-toggle').onclick = function() {
+        document.getElementById('nav-links').classList.toggle('nav-open');
+        this.classList.toggle('open');
+    };
+
+    // Handle contact form submission
+    document.getElementById('contact-form').onsubmit = function(e) {
+        e.preventDefault();
+        
+        // Show success message
+        document.getElementById('contact-success').style.display = 'block';
+        
+        // Reset form
+        this.reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            document.getElementById('contact-success').style.display = 'none';
+        }, 5000);
+    };
+    </script>
+</body>
+</html> 
