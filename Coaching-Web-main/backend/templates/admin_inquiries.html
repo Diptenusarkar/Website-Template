@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Inquiries</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/admin">Admin Panel</a>
+    <div class="d-flex">
+      <a href="/admin/logout" class="btn btn-outline-danger">Logout</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <h2>Student Admission Inquiries</h2>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Course</th>
+                <th>Message</th>
+                <th>Submitted At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for inquiry in inquiries %}
+            <tr>
+                <td>{{ inquiry['name'] }}</td>
+                <td>{{ inquiry['email'] }}</td>
+                <td>{{ inquiry['phone'] }}</td>
+                <td>{{ inquiry['course'] }}</td>
+                <td>{{ inquiry['message'] }}</td>
+                <td>{{ inquiry['submitted_at'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html> 
