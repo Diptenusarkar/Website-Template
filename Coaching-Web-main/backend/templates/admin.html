@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f4f6fb;
+        }
+        .admin-header {
+            background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(37,117,252,0.08);
+            position: relative;
+        }
+        .admin-header h1 {
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .admin-account {
+            position: absolute;
+            top: 1.5rem;
+            right: 2.5rem;
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.13);
+            border-radius: 24px;
+            padding: 0.4rem 1.2rem 0.4rem 0.7rem;
+            box-shadow: 0 2px 8px rgba(37,117,252,0.10);
+        }
+        .admin-account .user-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.7rem;
+            font-size: 1.3rem;
+            color: #2575fc;
+            box-shadow: 0 2px 8px rgba(37,117,252,0.10);
+        }
+        .admin-account .username {
+            font-weight: 700;
+            color: #fff;
+            font-size: 1.08rem;
+            margin-right: 1.2rem;
+        }
+        .admin-account .logout-link {
+            color: #fff;
+            font-size: 1.05rem;
+            text-decoration: underline;
+            opacity: 0.85;
+            margin-left: 0.5rem;
+        }
+        .admin-account .logout-link:hover {
+            color: #ff5252;
+            opacity: 1;
+        }
+        .admin-sidebar {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(37,117,252,0.07);
+            padding: 2rem 1.2rem 1.2rem 1.2rem;
+            min-height: 400px;
+        }
+        .admin-main {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(37,117,252,0.07);
+            padding: 2rem 2rem 1.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .form-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(37,117,252,0.04);
+            padding: 1.5rem 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .table thead {
+            background: #f1f6fb;
+        }
+        .btn-primary, .btn-success {
+            background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+            border: none;
+        }
+        .btn-primary:hover, .btn-success:hover {
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+        }
+        .sidebar-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2575fc;
+            margin-bottom: 1.2rem;
+        }
+        @media (max-width: 900px) {
+            .admin-sidebar { margin-bottom: 2rem; }
+            .admin-account { position: static; margin-bottom: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-header text-center">
+        <h1>Coaching Center Admin Panel</h1>
+        <p class="mb-0">Manage notifications and courses with ease</p>
+        <div class="admin-account">
+            <div class="user-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="#2575fc"/><rect x="4" y="15" width="16" height="6" rx="3" fill="#2575fc"/></svg>
+            </div>
+            <span class="username">{{ session['admin'] }}</span>
+            <a href="/admin/logout" class="logout-link">Logout</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="admin-sidebar">
+                    <div class="sidebar-title">Quick Links</div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a class="nav-link" href="#notifications">Notifications</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link" href="#courses">Courses</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="admin-main">
+                    <section id="notifications">
+                        <div class="form-card mb-4">
+                            <h2 class="mb-3">Post New Notification</h2>
+                            <form method="POST" class="mb-2">
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">Title</label>
+                                    <input type="text" class="form-control" id="title" name="title" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="2" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Post Notification</button>
+                            </form>
+                            {% with messages = get_flashed_messages(with_categories=true) %}
+                              {% if messages %}
+                                {% for category, message in messages %}
+                                  <div class="alert alert-{{ category }} mt-2">{{ message }}</div>
+                                {% endfor %}
+                              {% endif %}
+                            {% endwith %}
+                        </div>
+                        <div class="mb-4">
+                            <h3>All Notifications</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Message</th>
+                                            <th>Created At</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for notif in notifications %}
+                                        <tr>
+                                            <td>{{ notif['title'] }}</td>
+                                            <td>{{ notif['message'] }}</td>
+                                            <td>{{ notif['created_at'] }}</td>
+                                            <td>
+                                                <a href="/admin/edit/{{ notif['id'] }}" class="btn btn-sm btn-primary">Edit</a>
+                                                <form action="/admin/delete/{{ notif['id'] }}" method="POST" style="display:inline;">
+                                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this notification?');">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="courses">
+                        <div class="form-card mb-4">
+                            <h2 class="mb-3">Add New Course</h2>
+                            <form method="POST" action="/admin/courses/add" enctype="multipart/form-data">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Title</label>
+                                        <input type="text" class="form-control" name="course_title" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Price</label>
+                                        <input type="text" class="form-control" name="course_price" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Duration</label>
+                                        <input type="text" class="form-control" name="course_duration" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Level</label>
+                                        <input type="text" class="form-control" name="course_level" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Schedule</label>
+                                        <input type="text" class="form-control" name="course_schedule" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Description</label>
+                                        <textarea class="form-control" name="course_description" rows="2" required></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Image Upload</label>
+                                        <input type="file" class="form-control" name="course_image_file" accept="image/*">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Image URL</label>
+                                        <input type="url" class="form-control" name="course_image_url">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success mt-3">Add Course</button>
+                            </form>
+                        </div>
+                        <div>
+                            <h3>All Courses</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Image</th>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                            <th>Duration</th>
+                                            <th>Level</th>
+                                            <th>Schedule</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for course in courses %}
+                                        <tr>
+                                            <td style="max-width:240px;">
+                                                {% if course['image_file'] %}
+                                                    <img src="/static/course_images/{{ course['image_file'] }}" alt="img" style="max-width:220px;max-height:180px;border-radius:8px;">
+                                                {% elif course['image_url'] %}
+                                                    <img src="{{ course['image_url'] }}" alt="img" style="max-width:220px;max-height:180px;border-radius:8px;">
+                                                {% else %}-{% endif %}
+                                            </td>
+                                            <td>{{ course['title'] }}</td>
+                                            <td style="max-width:220px;">{{ course['description'] }}</td>
+                                            <td>{{ course['price'] }}</td>
+                                            <td>{{ course['duration'] }}</td>
+                                            <td>{{ course['level'] }}</td>
+                                            <td>{{ course['schedule'] }}</td>
+                                            <td>
+                                                <a href="/admin/courses/edit/{{ course['id'] }}" class="btn btn-sm btn-primary">Edit</a>
+                                                <form action="/admin/courses/delete/{{ course['id'] }}" method="POST" style="display:inline;">
+                                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this course?');">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
